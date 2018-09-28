@@ -14,16 +14,18 @@
       <!--Block Categories-->
       <div class="block-categories">
         <!-- group creation -->
-        <form class="rd-form rd-inline-form-creative" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="" >
+        <form id="create_group_form" class="rd-form rd-inline-form-creative" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="" >
           <div class="form-wrap">
             <div class="form-input-wrap">
               <input class="form-input form-control-has-validation" id="footer-form-email" type="text" name="name" placeholder="Name" required>
-
+              <input type="hidden" name="user" value="{{auth::user()->id}}">
+              <input type="hidden" name="club" value="1">
             </div>
           </div>
           <div class="form-button">
             <button class="button button-primary-outline" type="submit" aria-label="Send"><span class="fa fa-user-plus"></span></button>
           </div>
+          @csrf
         </form>
       </div>
     </div>

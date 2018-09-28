@@ -151,7 +151,21 @@
                     </article>
                   </div>
                 </li>
-                <li><a class="link link-icon link-icon-left link-classic" href="login-and-register.html"><span class="icon fl-bigmug-line-login12"></span><span class="link-icon-text">Your Account</span></a></li>
+                <li>
+                @auth
+                  <a class="link link-icon link-icon-left link-classic" href="{{ route('logout') }}"
+                  onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    <span class="icon fl-bigmug-line-login12"></span><span class="link-icon-text">Logout</span>
+                  </a>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      @csrf
+                  </form>
+                  @else
+                  <a class="link link-icon link-icon-left link-classic" href="login-and-register.html">
+                    <span class="icon fl-bigmug-line-login12"></span><span class="link-icon-text">Login|Register</span>
+                  </a>
+                  @endauth
+                </li>
               </ul>
             </div>
             <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1 toggle-original" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>

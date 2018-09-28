@@ -177,6 +177,10 @@
 <script type="text/javascript" async="" src="{{URL::asset('js/ga.js')}}"></script>
 <script src="{{URL::asset('js/core.min.js')}}"></script>
 <script src="{{URL::asset('js/script.js')}}"></script>
+<!--jQuery [ REQUIRED ]-->
+	<script src="{{ URL::asset('js/jquery.min.js') }}"></script>
+	<!--BootstrapJS [ RECOMMENDED ]-->
+	<script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 <!-- coded by houdini-->
 
 <!--LIVEDEMO_00 -->
