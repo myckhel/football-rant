@@ -187,17 +187,19 @@
             <div class="rd-navbar-main-container container">
               <!-- RD Navbar Nav-->
               <ul class="rd-navbar-nav">
-                <li class="rd-nav-item active"><a class="rd-nav-link" href="">Home</a>
+                <li class="rd-nav-item active"><a class="rd-nav-link" href=""><i class="fa fa-home" ></i> Home</a>
                 </li>
-                <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About Us</a>
+                <li class="rd-nav-item"><a class="rd-nav-link" href="{{route('about')}}"><i class="fa fa-info" ></i> About Us</a>
                 </li>
-                <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-nav-link" href="news.html">News</a><span class="rd-navbar-submenu-toggle"></span>
+                <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-nav-link" href="#"><i class="fa fa-book" ></i> Read</a><span class="rd-navbar-submenu-toggle"></span>
                   <!-- RD Navbar Dropdown-->
                   <ul class="rd-menu rd-navbar-dropdown">
-                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-post.html">Blog post</a></li>
+                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{route('news')}}">News</a></li>
+                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Posts Feed</a></li>
+                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{route('post')}}">Single</a></li>
                   </ul>
                 </li>
-                <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-nav-link" href="shop.html">Shop</a><span class="rd-navbar-submenu-toggle"></span>
+                <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-nav-link" href="shop.html"><i class="fa fa-shopping-cart" ></i> Shop</a><span class="rd-navbar-submenu-toggle"></span>
                   <!-- RD Navbar Dropdown-->
                   <ul class="rd-menu rd-navbar-dropdown">
                     <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="shop-elements.html">Shop Elements</a></li>
@@ -205,9 +207,9 @@
                     <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="checkout.html">Checkout</a></li>
                   </ul>
                 </li>
-                <li class="rd-nav-item"><a class="rd-nav-link" href="contact-us.html">Groups</a>
+                <li class="rd-nav-item"><a class="rd-nav-link" href="{{route('groups')}}"><i class="fa fa-users" ></i> Groups</a>
                 </li>
-                <li class="rd-nav-item"><a class="rd-nav-link" href="contact-us.html">Contact Us</a>
+                <li class="rd-nav-item"><a class="rd-nav-link" href="contact-us.html"><i class="fa fa-phone" ></i> Contact Us</a>
                 </li>
               </ul>
               <div class="rd-navbar-main-element">

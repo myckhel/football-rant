@@ -12,8 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css"-->
     <!-- Styles -->
     <!--link href="{{ asset('css/app.css') }}" rel="stylesheet"-->
-    @include('layouts.home-top')
+
     @yield('content')
     @include('layouts.footer')
+    @yield('js')
 </body>
 </html>

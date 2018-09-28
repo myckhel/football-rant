@@ -19,6 +19,22 @@ Route::get('/club', function () {
     return view('club.index');
 })->name('club');
 
+Route::get('/about', function () {
+    return view('club.about');
+})->name('about');
+
+Route::get('/news', function () {
+    return view('club.news');
+})->name('news');
+
+Route::get('/post', function () {
+    return view('club.post');
+})->name('post');
+
+Route::get('/groups', function () {
+    return view('club.groups');
+})->name('groups');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
