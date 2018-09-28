@@ -35,6 +35,7 @@ Route::get('/groups', function () {
     return view('club.groups');
 })->name('groups');
 
+Route::post('/group/create', 'GroupController@create')->name('group.create');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
