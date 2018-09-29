@@ -24,9 +24,9 @@
         </article>
 
         <div class="row row-30">
+          <!-- Product - Grid build-->
+          @foreach($groups as $group)
           <div class="col-md-6 col-lg-6">
-            <!-- Product - Grid build-->
-            @foreach($groups as $group)
             <article class="product">
               <header class="product-header">
                 <!-- Badge-->
@@ -58,8 +58,8 @@
                 </ul>
               </footer>
             </article>
-            @endforeach
           </div>
+          @endforeach
         </div>
       </div>
       @include('layouts.sidebar')

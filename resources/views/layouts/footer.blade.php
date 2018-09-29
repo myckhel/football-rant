@@ -18,7 +18,7 @@
       <div class="row row-50">
         <div class="col-lg-5 text-center text-sm-left">
           <article class="unit unit-sm-horizontal unit-middle justify-content-center justify-content-sm-start footer-classic-info">
-            <div class="unit-left"><a class="brand brand-md link-circle" href=""><img class="brand-logo " src="./Home_files/logo-soccer-default-129x129.png" alt="" width="129" height="129"></a>
+            <div class="unit-left"><a class="brand brand-md link-circle" href=""><img class="brand-logo " src="{{URL::asset('Home_files/logo-soccer-default-129x129.png')}}" alt="" width="129" height="129"></a>
             </div>
             <div class="unit-body">
               <p>Atletico website offers you the latest news about our team as well as updates on our matches and other events.</p>
@@ -73,7 +73,7 @@
             <div class="col-sm-6">
                     <!-- Post Classic-->
                     <article class="post-classic">
-                      <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/footer-soccer-post-1-93x87.jpg" alt="" width="93" height="87"></a></div>
+                      <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/footer-soccer-post-1-93x87.jpg')}}" alt="" width="93" height="87"></a></div>
                       <div class="post-classic-main">
                         <!-- Badge-->
                         <div class="badge badge-secondary">The Team
@@ -88,7 +88,7 @@
             <div class="col-sm-6">
                     <!-- Post Classic-->
                     <article class="post-classic">
-                      <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/footer-soccer-post-2-93x87.jpg" alt="" width="93" height="87"></a></div>
+                      <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/footer-soccer-post-2-93x87.jpg')}}" alt="" width="93" height="87"></a></div>
                       <div class="post-classic-main">
                         <!-- Badge-->
                         <div class="badge badge-red">Hot<span class="icon material-icons-whatshot"></span>
@@ -103,7 +103,7 @@
             <div class="col-sm-6">
                     <!-- Post Classic-->
                     <article class="post-classic">
-                      <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/footer-soccer-post-3-93x87.jpg" alt="" width="93" height="87"></a></div>
+                      <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/footer-soccer-post-3-93x87.jpg')}}" alt="" width="93" height="87"></a></div>
                       <div class="post-classic-main">
                         <!-- Badge-->
                         <div class="badge badge-primary">The League
@@ -118,7 +118,7 @@
             <div class="col-sm-6">
                     <!-- Post Classic-->
                     <article class="post-classic">
-                      <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/footer-soccer-post-4-93x87.jpg" alt="" width="93" height="87"></a></div>
+                      <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/footer-soccer-post-4-93x87.jpg')}}" alt="" width="93" height="87"></a></div>
                       <div class="post-classic-main">
                         <!-- Badge-->
                         <div class="badge badge-primary">The League
@@ -163,7 +163,7 @@
       </div>
       <div class="modal-body">
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" width="560" height="315" src="./Home_files/saved_resource.html" data-src="https://www.youtube.com/embed/E6mFQhP6JWI"></iframe>
+          <iframe class="embed-responsive-item" width="560" height="315" src="{{URL::asset('Home_files/saved_resource.html')}}" data-src="https://www.youtube.com/embed/E6mFQhP6JWI"></iframe>
         </div>
       </div>
     </div>
@@ -173,12 +173,12 @@
 <!-- Global Mailform Output-->
 <div class="snackbars" id="form-output-global"></div>
 <!-- Javascript-->
+<!--jQuery [ REQUIRED ]-->
+	<script src="{{ URL::asset('js/jquery.min.js') }}"></script>
 <script async="" src="{{URL::asset('js/gtm.js')}}"></script>
 <script type="text/javascript" async="" src="{{URL::asset('js/ga.js')}}"></script>
 <script src="{{URL::asset('js/core.min.js')}}"></script>
 <script src="{{URL::asset('js/script.js')}}"></script>
-<!--jQuery [ REQUIRED ]-->
-	<script src="{{ URL::asset('js/jquery.min.js') }}"></script>
 	<!--BootstrapJS [ RECOMMENDED ]-->
 	<script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 <!-- coded by houdini-->

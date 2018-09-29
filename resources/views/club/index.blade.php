@@ -37,7 +37,7 @@
 
           <!-- Post Carmen-->
 
-        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2000px, 0px, 0px); transition: all 0.25s ease 0s; width: 3600px;"><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="./Home_files/news-5-2-369x343.jpg" alt="" width="369" height="343">
+        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2000px, 0px, 0px); transition: all 0.25s ease 0s; width: 3600px;"><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="{{URL::asset('Home_files/news-5-2-369x343.jpg')}}" alt="" width="369" height="343">
             <div class="post-carmen-header">
               <!-- Badge-->
               <div class="badge badge-secondary">The Team
@@ -54,7 +54,7 @@
                 </div>
               </div>
             </div>
-          </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="./Home_files/news-5-3-369x343.jpg" alt="" width="369" height="343">
+          </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="{{URL::asset('Home_files/news-5-3-369x343.jpg')}}" alt="" width="369" height="343">
             <div class="post-carmen-header">
               <!-- Post Video Button--><a class="post-video-button" href="#modal1" data-toggle="modal"><span class="icon material-icons-play_arrow"></span></a>
             </div>
@@ -69,7 +69,7 @@
                 </div>
               </div>
             </div>
-          </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="./Home_files/news-5-4-369x343.jpg" alt="" width="369" height="343">
+          </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="{{URL::asset('Home_files/news-5-4-369x343.jpg')}}" alt="" width="369" height="343">
             <div class="post-carmen-header">
               <!-- Badge-->
               <div class="badge badge-primary">The League
@@ -86,7 +86,7 @@
                 </div>
               </div>
             </div>
-          </article></div><div class="owl-item" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="./Home_files/news-5-2-369x343.jpg" alt="" width="369" height="343">
+          </article></div><div class="owl-item" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="{{URL::asset('Home_files/news-5-2-369x343.jpg')}}" alt="" width="369" height="343">
             <div class="post-carmen-header">
               <!-- Badge-->
               <div class="badge badge-secondary">The Team
@@ -103,7 +103,7 @@
                 </div>
               </div>
             </div>
-          </article></div><div class="owl-item" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="./Home_files/news-5-3-369x343.jpg" alt="" width="369" height="343">
+          </article></div><div class="owl-item" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="{{URL::asset('Home_files/news-5-3-369x343.jpg')}}" alt="" width="369" height="343">
             <div class="post-carmen-header">
               <!-- Post Video Button--><a class="post-video-button" href="#modal1" data-toggle="modal"><span class="icon material-icons-play_arrow"></span></a>
             </div>
@@ -118,7 +118,7 @@
                 </div>
               </div>
             </div>
-          </article></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="./Home_files/news-5-4-369x343.jpg" alt="" width="369" height="343">
+          </article></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="{{URL::asset('Home_files/news-5-4-369x343.jpg')}}" alt="" width="369" height="343">
             <div class="post-carmen-header">
               <!-- Badge-->
               <div class="badge badge-primary">The League
@@ -135,7 +135,7 @@
                 </div>
               </div>
             </div>
-          </article></div><div class="owl-item cloned active" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="./Home_files/news-5-2-369x343.jpg" alt="" width="369" height="343">
+          </article></div><div class="owl-item cloned active" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="{{URL::asset('Home_files/news-5-2-369x343.jpg')}}" alt="" width="369" height="343">
             <div class="post-carmen-header">
               <!-- Badge-->
               <div class="badge badge-secondary">The Team
@@ -152,7 +152,7 @@
                 </div>
               </div>
             </div>
-          </article></div><div class="owl-item cloned active" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="./Home_files/news-5-3-369x343.jpg" alt="" width="369" height="343">
+          </article></div><div class="owl-item cloned active" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="{{URL::asset('Home_files/news-5-3-369x343.jpg')}}" alt="" width="369" height="343">
             <div class="post-carmen-header">
               <!-- Post Video Button--><a class="post-video-button" href="#modal1" data-toggle="modal"><span class="icon material-icons-play_arrow"></span></a>
             </div>
@@ -167,7 +167,7 @@
                 </div>
               </div>
             </div>
-          </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="./Home_files/news-5-4-369x343.jpg" alt="" width="369" height="343">
+          </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="{{URL::asset('Home_files/news-5-4-369x343.jpg')}}" alt="" width="369" height="343">
             <div class="post-carmen-header">
               <!-- Badge-->
               <div class="badge badge-primary">The League
@@ -205,7 +205,7 @@
               <h3 class="game-info-title">Champions league semi-final 2018</h3>
               <div class="game-info-main">
                 <div class="game-info-team game-info-team-first">
-                  <figure><img src="./Home_files/team-atletico-100x100.png" alt="" width="100" height="100">
+                  <figure><img src="{{URL::asset('Home_files/team-atletico-100x100.png')}}" alt="" width="100" height="100">
                   </figure>
                   <div class="game-result-team-name">Atletico</div>
                   <div class="game-result-team-country">Italy</div>
@@ -226,7 +226,7 @@
                   </div>
                 </div>
                 <div class="game-info-team game-info-team-second">
-                  <figure><img src="./Home_files/team-bavaria-fc-113x106.png" alt="" width="113" height="106">
+                  <figure><img src="{{URL::asset('Home_files/team-bavaria-fc-113x106.png')}}" alt="" width="113" height="106">
                   </figure>
                   <div class="game-result-team-name">Celta Vigo</div>
                   <div class="game-result-team-country">Spain</div>
@@ -250,7 +250,7 @@
           <div class="row row-30">
             <div class="col-md-6">
               <!-- Post Future-->
-              <article class="post-future"><a class="post-future-figure" href="blog-post.html"><img src="./Home_files/news-2-1-368x287.jpg" alt="" width="368" height="287"></a>
+              <article class="post-future"><a class="post-future-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/news-2-1-368x287.jpg')}}" alt="" width="368" height="287"></a>
                 <div class="post-future-main">
                   <h4 class="post-future-title"><a href="blog-post.html">Sadio mane still makes a difference, sam wilson admits</a></h4>
                   <div class="post-future-meta">
@@ -286,7 +286,7 @@
             </div>
             <div class="col-md-6">
               <!-- Post Future-->
-              <article class="post-future"><a class="post-future-figure" href="blog-post.html"><img src="./Home_files/news-2-2-368x287.jpg" alt="" width="368" height="287"></a>
+              <article class="post-future"><a class="post-future-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/news-2-2-368x287.jpg')}}" alt="" width="368" height="287"></a>
                 <div class="post-future-main">
                   <h4 class="post-future-title"><a href="blog-post.html">Robertson's decent debut at european cup 2018</a></h4>
                   <div class="post-future-meta">
@@ -322,7 +322,7 @@
             </div>
             <div class="col-md-12">
               <!-- Post Gloria-->
-              <article class="post-gloria"><img src="./Home_files/post-gloria-1-769x429.jpg" alt="" width="769" height="429">
+              <article class="post-gloria"><img src="{{URL::asset('Home_files/post-gloria-1-769x429.jpg')}}" alt="" width="769" height="429">
                 <div class="post-gloria-main">
                   <h3 class="post-gloria-title"><a href="blog-post.html">Premier League Winners and Losers: a quick look</a></h3>
                   <div class="post-gloria-meta">
@@ -344,7 +344,7 @@
             </div>
             <div class="col-md-6">
               <!-- Post Future-->
-              <article class="post-future"><a class="post-future-figure" href="blog-post.html"><img src="./Home_files/news-2-3-368x287.jpg" alt="" width="368" height="287"></a>
+              <article class="post-future"><a class="post-future-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/news-2-3-368x287.jpg')}}" alt="" width="368" height="287"></a>
                 <div class="post-future-main">
                   <h4 class="post-future-title"><a href="blog-post.html">Pochettino and ‘gaffer’s son’ Rose estranged – reports</a></h4>
                   <div class="post-future-meta">
@@ -380,7 +380,7 @@
             </div>
             <div class="col-md-6">
               <!-- Post Future-->
-              <article class="post-future"><a class="post-future-figure" href="blog-post.html"><img src="./Home_files/news-2-4-368x287.jpg" alt="" width="368" height="287"></a>
+              <article class="post-future"><a class="post-future-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/news-2-4-368x287.jpg')}}" alt="" width="368" height="287"></a>
                 <div class="post-future-main">
                   <h4 class="post-future-title"><a href="blog-post.html">Coutinho’s camp: It was all Barca’s fault and we can prove it</a></h4>
                   <div class="post-future-meta">
@@ -416,7 +416,7 @@
             </div>
             <div class="col-md-12">
               <!-- Post Future-->
-              <article class="post-future post-future-horizontal"><a class="post-future-figure" href="blog-post.html"><img src="./Home_files/news-3-1-370x325.jpg" alt="" width="370" height="325"></a>
+              <article class="post-future post-future-horizontal"><a class="post-future-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/news-3-1-370x325.jpg')}}" alt="" width="370" height="325"></a>
                 <div class="post-future-main">
                   <h4 class="post-future-title"><a href="blog-post.html">Zidane: “We’re not going to change the way we play at the Calderón”</a></h4>
                   <div class="post-future-meta">
@@ -436,7 +436,7 @@
             </div>
             <div class="col-md-12">
               <!-- Post Future-->
-              <article class="post-future post-future-horizontal"><a class="post-future-figure" href="blog-post.html"><img src="./Home_files/news-3-2-370x325.jpg" alt="" width="370" height="325"></a>
+              <article class="post-future post-future-horizontal"><a class="post-future-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/news-3-2-370x325.jpg')}}" alt="" width="370" height="325"></a>
                 <div class="post-future-main">
                   <h4 class="post-future-title"><a href="blog-post.html">NFL Will Handle Referee Pete Morelli’s Use of Profanity Internally</a></h4>
                   <div class="post-future-meta">
@@ -468,7 +468,7 @@
           <div class="row row-30">
             <div class="col-md-6">
               <!-- Player Info Modern-->
-              <div class="player-info-modern"><a class="player-info-modern-figure" href="#"><img src="./Home_files/player-1-368x286.png" alt="" width="368" height="286"></a>
+              <div class="player-info-modern"><a class="player-info-modern-figure" href="#"><img src="{{URL::asset('Home_files/player-1-368x286.png')}}" alt="" width="368" height="286"></a>
                 <div class="player-info-modern-footer">
                   <div class="player-info-modern-number">
                     <p>05</p>
@@ -504,7 +504,7 @@
             </div>
             <div class="col-md-6">
               <!-- Player Info Modern-->
-              <div class="player-info-modern"><a class="player-info-modern-figure" href="#"><img src="./Home_files/player-2-368x286.png" alt="" width="368" height="286"></a>
+              <div class="player-info-modern"><a class="player-info-modern-figure" href="#"><img src="{{URL::asset('Home_files/player-2-368x286.png')}}" alt="" width="368" height="286"></a>
                 <div class="player-info-modern-footer">
                   <div class="player-info-modern-number">
                     <p>21</p>
@@ -540,7 +540,7 @@
             </div>
             <div class="col-md-6">
               <!-- Player Info Modern-->
-              <div class="player-info-modern"><a class="player-info-modern-figure" href="#"><img src="./Home_files/player-3-368x286.png" alt="" width="368" height="286"></a>
+              <div class="player-info-modern"><a class="player-info-modern-figure" href="#"><img src="{{URL::asset('Home_files/player-3-368x286.png')}}" alt="" width="368" height="286"></a>
                 <div class="player-info-modern-footer">
                   <div class="player-info-modern-number">
                     <p>21</p>
@@ -576,7 +576,7 @@
             </div>
             <div class="col-md-6">
               <!-- Player Info Modern-->
-              <div class="player-info-modern"><a class="player-info-modern-figure" href="#"><img src="./Home_files/player-4-368x286.png" alt="" width="368" height="286"></a>
+              <div class="player-info-modern"><a class="player-info-modern-figure" href="#"><img src="{{URL::asset('Home_files/player-4-368x286.png')}}" alt="" width="368" height="286"></a>
                 <div class="player-info-modern-footer">
                   <div class="player-info-modern-number">
                     <p>21</p>

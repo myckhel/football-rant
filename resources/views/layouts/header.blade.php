@@ -20,7 +20,11 @@
   .ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;}
    html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
 </style>
-<div class="ie-panel"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="./Home_files/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+<div class="ie-panel">
+  <a href="https://windows.microsoft.com/en-US/internet-explorer/">
+    <img src="{{URL::asset('Home_files/warning_bar_0000_us.jpg')}}" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.">
+  </a>
+</div>
 <div class="preloader loaded">
   <div class="preloader-body">
     <div class="preloader-item"></div>
@@ -32,7 +36,8 @@
   <header class="section page-header rd-navbar-dark">
     <!-- RD Navbar-->
     <div class="rd-navbar-wrap" style="height: 248px;">
-      <nav class="rd-navbar rd-navbar-classic rd-navbar-original rd-navbar-static" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="166px" data-xl-stick-up-offset="166px" data-xxl-stick-up-offset="166px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+      <nav class="rd-navbar rd-navbar-classic rd-navbar-original rd-navbar-static" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+      data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="166px" data-xl-stick-up-offset="166px" data-xxl-stick-up-offset="166px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
         <div class="rd-navbar-panel">
           <!-- RD Navbar Toggle-->
           <button class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-main"><span></span></button>
@@ -53,7 +58,8 @@
 
                     <!-- Post Inline-->
 
-                  <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1412px, 0px, 0px); transition: all 0.25s ease 0s; width: 2473px;"><div class="owl-item cloned" style="width: 343.188px; margin-right: 10px;"><article class="post-inline">
+                  <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1412px, 0px, 0px); transition: all 0.25s ease 0s; width: 2473px;"><div class="owl-item cloned" style="width: 343.188px; margin-right: 10px;">
+                    <article class="post-inline">
                       <time class="post-inline-time" datetime="2018">April 15, 2018</time>
                       <p class="post-inline-title">Atletico vs Dream Team</p>
                     </article></div><div class="owl-item cloned" style="width: 343.188px; margin-right: 10px;"><article class="post-inline">
@@ -117,12 +123,15 @@
                         <div class="cart-inline-main">
                                 <!-- Product inline-->
                                 <article class="product-inline">
-                                  <div class="product-inline-aside"><a class="product-inline-figure" href="#"><img class="product-inline-image" src="./Home_files/product-Nike-Air-Zoom-Pegasus-67x30.png" alt="" width="67" height="30"></a></div>
+                                  <div class="product-inline-aside"><a class="product-inline-figure" href="#"><img class="product-inline-image" src="{{URL::asset('Home_files/product-Nike-Air-Zoom-Pegasus-67x30.png')}}" alt="" width="67" height="30"></a></div>
                                   <div class="product-inline-main">
                                     <p class="heading-7 product-inline-title"><a href="#">Nike Air Zoom Pegasus</a></p>
                                     <ul class="product-inline-meta">
                                       <li>
-                                        <div class="stepper "><input class="form-input stepper-input" type="number" data-zeros="true" value="2" min="1" max="100"><span class="stepper-arrow up"></span><span class="stepper-arrow down"></span></div>
+                                        <div class="stepper "><input class="form-input stepper-input" type="number" data-zeros="true" value="2" min="1" max="100">
+                                          <span class="stepper-arrow up"></span>
+                                          <span class="stepper-arrow down"></span>
+                                        </div>
                                       </li>
                                       <li>
                                         <p class="product-inline-price">$500.00</p>
@@ -132,7 +141,7 @@
                                 </article>
                                 <!-- Product inline-->
                                 <article class="product-inline">
-                                  <div class="product-inline-aside"><a class="product-inline-figure" href="#"><img class="product-inline-image" src="./Home_files/product-Nike-Baseball-Hat-55x38.png" alt="" width="55" height="38"></a></div>
+                                  <div class="product-inline-aside"><a class="product-inline-figure" href="#"><img class="product-inline-image" src="{{URL::asset('Home_files/product-Nike-Baseball-Hat-55x38.png')}}" alt="" width="55" height="38"></a></div>
                                   <div class="product-inline-main">
                                     <p class="heading-7 product-inline-title"><a href="#">Nike Baseball Hat</a></p>
                                     <ul class="product-inline-meta">
@@ -161,7 +170,7 @@
                       @csrf
                   </form>
                   @else
-                  <a class="link link-icon link-icon-left link-classic" href="login-and-register.html">
+                  <a class="link link-icon link-icon-left link-classic" href="{{route('auth.sign')}}">
                     <span class="icon fl-bigmug-line-login12"></span><span class="link-icon-text">Login|Register</span>
                   </a>
                   @endauth
@@ -175,13 +184,13 @@
           <div class="rd-navbar-main-top">
             <div class="rd-navbar-main-container container">
               <!-- RD Navbar Brand-->
-              <div class="rd-navbar-brand"><a class="brand link-circle" href=""><img class="brand-logo " src="./Home_files/logo-soccer-default-129x129.png" alt="" width="129" height="129"></a>
+              <div class="rd-navbar-brand"><a class="brand link-circle" href=""><img class="brand-logo " src="{{URL::asset('Home_files/logo-soccer-default-129x129.png')}}" alt="" width="129" height="129"></a>
               </div>
               <!-- RD Navbar List-->
               <ul class="rd-navbar-list">
-                <li class="rd-navbar-list-item"><a class="rd-navbar-list-link" href="#"><img src="./Home_files/partners-1-inverse-75x42.png" alt="" width="75" height="42"></a></li>
-                <li class="rd-navbar-list-item"><a class="rd-navbar-list-link" href="#"><img src="./Home_files/partners-2-inverse-78x41.png" alt="" width="78" height="41"></a></li>
-                <li class="rd-navbar-list-item"><a class="rd-navbar-list-link" href="#"><img src="./Home_files/partners-3-inverse-65x44.png" alt="" width="65" height="44"></a></li>
+                <li class="rd-navbar-list-item"><a class="rd-navbar-list-link" href="#"><img src="{{URL::asset('Home_files/partners-1-inverse-75x42.png')}}" alt="" width="75" height="42"></a></li>
+                <li class="rd-navbar-list-item"><a class="rd-navbar-list-link" href="#"><img src="{{URL::asset('Home_files/partners-2-inverse-78x41.png')}}" alt="" width="78" height="41"></a></li>
+                <li class="rd-navbar-list-item"><a class="rd-navbar-list-link" href="#"><img src="{{URL::asset('Home_files/partners-3-inverse-65x44.png')}}" alt="" width="65" height="44"></a></li>
               </ul>
               <!-- RD Navbar Search-->
               <div class="rd-navbar-search toggle-original-elements">
@@ -201,16 +210,16 @@
             <div class="rd-navbar-main-container container">
               <!-- RD Navbar Nav-->
               <ul class="rd-navbar-nav">
-                <li class="rd-nav-item active"><a class="rd-nav-link" href=""><i class="fa fa-home" ></i> Home</a>
+                <li class="rd-nav-item active"><a class="rd-nav-link" href="{{route('club','atletico')}}"><i class="fa fa-home" ></i> Home</a>
                 </li>
-                <li class="rd-nav-item"><a class="rd-nav-link" href="{{route('about')}}"><i class="fa fa-info" ></i> About Us</a>
+                <li class="rd-nav-item"><a class="rd-nav-link" href="{{route('about','atletico')}}"><i class="fa fa-info" ></i> About Us</a>
                 </li>
                 <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-nav-link" href="#"><i class="fa fa-book" ></i> Read</a><span class="rd-navbar-submenu-toggle"></span>
                   <!-- RD Navbar Dropdown-->
                   <ul class="rd-menu rd-navbar-dropdown">
-                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{route('news')}}">News</a></li>
+                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{route('news','atletico')}}">News</a></li>
                     <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Posts Feed</a></li>
-                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{route('post')}}">Single</a></li>
+                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{route('post','atletico')}}">Single</a></li>
                   </ul>
                 </li>
                 <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-nav-link" href="shop.html"><i class="fa fa-shopping-cart" ></i> Shop</a><span class="rd-navbar-submenu-toggle"></span>
@@ -221,7 +230,7 @@
                     <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="checkout.html">Checkout</a></li>
                   </ul>
                 </li>
-                <li class="rd-nav-item"><a class="rd-nav-link" href="{{route('groups')}}"><i class="fa fa-users" ></i> Groups</a>
+                <li class="rd-nav-item"><a class="rd-nav-link" href="{{route('groups','atletico')}}"><i class="fa fa-users" ></i> Groups</a>
                 </li>
                 <li class="rd-nav-item"><a class="rd-nav-link" href="contact-us.html"><i class="fa fa-phone" ></i> Contact Us</a>
                 </li>

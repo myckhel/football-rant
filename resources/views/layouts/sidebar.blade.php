@@ -74,7 +74,7 @@
           <div class="tab-pane fade show active" id="tabs-modern-1">
                               <!-- Post Classic-->
                               <article class="post-classic">
-                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-5-94x94.jpg" alt="" width="94" height="94"></a></div>
+                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-5-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                                 <div class="post-classic-main">
                                   <p class="post-classic-title"><a href="blog-post.html">Alvaro Morata proving his worth at Chelsea</a></p>
                                   <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -86,7 +86,7 @@
                               </article>
                               <!-- Post Classic-->
                               <article class="post-classic">
-                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-6-94x94.jpg" alt="" width="94" height="94"></a></div>
+                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-6-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                                 <div class="post-classic-main">
                                   <p class="post-classic-title"><a href="blog-post.html">Are Bournemouth in trouble this season?</a></p>
                                   <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -98,7 +98,7 @@
                               </article>
                               <!-- Post Classic-->
                               <article class="post-classic">
-                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-7-94x94.jpg" alt="" width="94" height="94"></a></div>
+                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-7-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                                 <div class="post-classic-main">
                                   <p class="post-classic-title"><a href="blog-post.html">The Reds’ Convincing Win At Anfield Road</a></p>
                                   <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -110,7 +110,7 @@
                               </article>
                               <!-- Post Classic-->
                               <article class="post-classic">
-                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-8-94x94.jpg" alt="" width="94" height="94"></a></div>
+                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-8-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                                 <div class="post-classic-main">
                                   <p class="post-classic-title"><a href="blog-post.html">Premier League Preview Part 3: Survival Battle</a></p>
                                   <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -124,7 +124,7 @@
           <div class="tab-pane fade" id="tabs-modern-2">
                               <!-- Post Classic-->
                               <article class="post-classic">
-                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-2-94x94.jpg" alt="" width="94" height="94"></a></div>
+                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-2-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                                 <div class="post-classic-main">
                                   <p class="post-classic-title"><a href="blog-post.html">Are Bournemouth in trouble this season?</a></p>
                                   <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -136,7 +136,7 @@
                               </article>
                               <!-- Post Classic-->
                               <article class="post-classic">
-                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-3-94x94.jpg" alt="" width="94" height="94"></a></div>
+                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-3-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                                 <div class="post-classic-main">
                                   <p class="post-classic-title"><a href="blog-post.html">Alvaro Morata proving his worth at Chelsea</a></p>
                                   <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -148,7 +148,7 @@
                               </article>
                               <!-- Post Classic-->
                               <article class="post-classic">
-                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-4-94x94.jpg" alt="" width="94" height="94"></a></div>
+                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-4-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                                 <div class="post-classic-main">
                                   <p class="post-classic-title"><a href="blog-post.html">The Reds’ Convincing Win At Anfield Road</a></p>
                                   <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -162,7 +162,7 @@
           <div class="tab-pane fade" id="tabs-modern-3">
                               <!-- Post Classic-->
                               <article class="post-classic">
-                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-1-94x94.jpg" alt="" width="94" height="94"></a></div>
+                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-1-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                                 <div class="post-classic-main">
                                   <p class="post-classic-title"><a href="blog-post.html">Premier League Preview Part 3: Survival Battle</a></p>
                                   <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -174,7 +174,7 @@
                               </article>
                               <!-- Post Classic-->
                               <article class="post-classic">
-                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-4-94x94.jpg" alt="" width="94" height="94"></a></div>
+                                <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-4-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                                 <div class="post-classic-main">
                                   <p class="post-classic-title"><a href="blog-post.html">Alvaro Morata proving his worth at Chelsea</a></p>
                                   <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -225,7 +225,7 @@
                               <path fill="#171617" d="M1.584,0h1.8L2.112,4.68H0L1.584,0z M5.112,0h1.776L5.64,4.68H3.528L5.112,0z"></path>
                             </svg>
                             <div class="comment-classic-header">
-                              <div class="comment-classic-header-aside"><img src="./Home_files/user-1-63x63.jpg" alt="" width="63" height="63">
+                              <div class="comment-classic-header-aside"><img src="{{URL::asset('Home_files/user-1-63x63.jpg')}}" alt="" width="63" height="63">
                               </div>
                               <div class="comment-classic-header-main">
                                 <p class="comment-classic-title">Amanda Norton</p>
@@ -246,7 +246,7 @@
                               <path fill="#171617" d="M1.584,0h1.8L2.112,4.68H0L1.584,0z M5.112,0h1.776L5.64,4.68H3.528L5.112,0z"></path>
                             </svg>
                             <div class="comment-classic-header">
-                              <div class="comment-classic-header-aside"><img src="./Home_files/user-2-63x63.jpg" alt="" width="63" height="63">
+                              <div class="comment-classic-header-aside"><img src="{{URL::asset('Home_files/user-2-63x63.jpg')}}" alt="" width="63" height="63">
                               </div>
                               <div class="comment-classic-header-main">
                                 <p class="comment-classic-title">Robert Norton</p>
@@ -267,7 +267,7 @@
                               <path fill="#171617" d="M1.584,0h1.8L2.112,4.68H0L1.584,0z M5.112,0h1.776L5.64,4.68H3.528L5.112,0z"></path>
                             </svg>
                             <div class="comment-classic-header">
-                              <div class="comment-classic-header-aside"><img src="./Home_files/user-3-63x63.jpg" alt="" width="63" height="63">
+                              <div class="comment-classic-header-aside"><img src="{{URL::asset('Home_files/user-3-63x63.jpg')}}" alt="" width="63" height="63">
                               </div>
                               <div class="comment-classic-header-main">
                                 <p class="comment-classic-title">Rebecca Smith</p>
@@ -343,7 +343,7 @@
       <div class="list-post-classic">
                           <!-- Post Classic-->
                           <article class="post-classic">
-                            <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-1-94x94.jpg" alt="" width="94" height="94"></a></div>
+                            <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-1-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                             <div class="post-classic-main">
                               <p class="post-classic-title"><a href="blog-post.html">Raheem Sterling turns the tide for Manchester</a></p>
                               <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -353,7 +353,7 @@
                           </article>
                           <!-- Post Classic-->
                           <article class="post-classic">
-                            <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-2-94x94.jpg" alt="" width="94" height="94"></a></div>
+                            <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-2-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                             <div class="post-classic-main">
                               <p class="post-classic-title"><a href="blog-post.html">Prem in 90 seconds: Chelsea's crisis is over!</a></p>
                               <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -363,7 +363,7 @@
                           </article>
                           <!-- Post Classic-->
                           <article class="post-classic">
-                            <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-3-94x94.jpg" alt="" width="94" height="94"></a></div>
+                            <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-3-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                             <div class="post-classic-main">
                               <p class="post-classic-title"><a href="blog-post.html">Good vibes back at struggling Schalke</a></p>
                               <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -373,7 +373,7 @@
                           </article>
                           <!-- Post Classic-->
                           <article class="post-classic">
-                            <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-4-94x94.jpg" alt="" width="94" height="94"></a></div>
+                            <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-4-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                             <div class="post-classic-main">
                               <p class="post-classic-title"><a href="blog-post.html">Liverpool in desperate need of backup players</a></p>
                               <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -420,7 +420,7 @@
                               <path fill="#171617" d="M1.584,0h1.8L2.112,4.68H0L1.584,0z M5.112,0h1.776L5.64,4.68H3.528L5.112,0z"></path>
                             </svg>
                             <div class="comment-classic-header">
-                              <div class="comment-classic-header-aside"><img src="./Home_files/user-1-63x63.jpg" alt="" width="63" height="63">
+                              <div class="comment-classic-header-aside"><img src="{{URL::asset('Home_files/user-1-63x63.jpg')}}" alt="" width="63" height="63">
                               </div>
                               <div class="comment-classic-header-main">
                                 <p class="comment-classic-title">Amanda Norton</p>
@@ -441,7 +441,7 @@
                               <path fill="#171617" d="M1.584,0h1.8L2.112,4.68H0L1.584,0z M5.112,0h1.776L5.64,4.68H3.528L5.112,0z"></path>
                             </svg>
                             <div class="comment-classic-header">
-                              <div class="comment-classic-header-aside"><img src="./Home_files/user-2-63x63.jpg" alt="" width="63" height="63">
+                              <div class="comment-classic-header-aside"><img src="{{URL::asset('Home_files/user-2-63x63.jpg')}}" alt="" width="63" height="63">
                               </div>
                               <div class="comment-classic-header-main">
                                 <p class="comment-classic-title">Robert Norton</p>
@@ -462,7 +462,7 @@
                               <path fill="#171617" d="M1.584,0h1.8L2.112,4.68H0L1.584,0z M5.112,0h1.776L5.64,4.68H3.528L5.112,0z"></path>
                             </svg>
                             <div class="comment-classic-header">
-                              <div class="comment-classic-header-aside"><img src="./Home_files/user-3-63x63.jpg" alt="" width="63" height="63">
+                              <div class="comment-classic-header-aside"><img src="{{URL::asset('Home_files/user-3-63x63.jpg')}}" alt="" width="63" height="63">
                               </div>
                               <div class="comment-classic-header-main">
                                 <p class="comment-classic-title">Rebecca Smith</p>
@@ -540,7 +540,7 @@
       <div class="list-post-classic">
                           <!-- Post Classic-->
                           <article class="post-classic">
-                            <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-1-94x94.jpg" alt="" width="94" height="94"></a></div>
+                            <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-1-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                             <div class="post-classic-main">
                               <p class="post-classic-title"><a href="blog-post.html">Raheem Sterling turns the tide for Manchester</a></p>
                               <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -550,7 +550,7 @@
                           </article>
                           <!-- Post Classic-->
                           <article class="post-classic">
-                            <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-2-94x94.jpg" alt="" width="94" height="94"></a></div>
+                            <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-2-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                             <div class="post-classic-main">
                               <p class="post-classic-title"><a href="blog-post.html">Prem in 90 seconds: Chelsea's crisis is over!</a></p>
                               <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -560,7 +560,7 @@
                           </article>
                           <!-- Post Classic-->
                           <article class="post-classic">
-                            <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-3-94x94.jpg" alt="" width="94" height="94"></a></div>
+                            <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-3-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                             <div class="post-classic-main">
                               <p class="post-classic-title"><a href="blog-post.html">Good vibes back at struggling Schalke</a></p>
                               <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -570,7 +570,7 @@
                           </article>
                           <!-- Post Classic-->
                           <article class="post-classic">
-                            <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="./Home_files/blog-element-4-94x94.jpg" alt="" width="94" height="94"></a></div>
+                            <div class="post-classic-aside"><a class="post-classic-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/blog-element-4-94x94.jpg')}}" alt="" width="94" height="94"></a></div>
                             <div class="post-classic-main">
                               <p class="post-classic-title"><a href="blog-post.html">Liverpool in desperate need of backup players</a></p>
                               <div class="post-classic-time"><span class="icon mdi mdi-clock"></span>
@@ -593,7 +593,7 @@
       <article class="game-result game-result-classic">
         <div class="game-result-main">
           <div class="game-result-team game-result-team-first">
-            <figure class="game-result-team-figure game-result-team-figure-big"><img src="./Home_files/team-atletico-55x55.png" alt="" width="55" height="55">
+            <figure class="game-result-team-figure game-result-team-figure-big"><img src="{{URL::asset('Home_files/team-atletico-55x55.png')}}" alt="" width="55" height="55">
             </figure>
             <div class="game-result-team-name">Atletico</div>
             <div class="game-result-team-country">USA</div>
@@ -620,7 +620,7 @@
             <div class="game-results-status">Home</div>
           </div>
           <div class="game-result-team game-result-team-second">
-            <figure class="game-result-team-figure game-result-team-figure-big"><img src="./Home_files/team-real-madrid-41x59.png" alt="" width="41" height="59">
+            <figure class="game-result-team-figure game-result-team-figure-big"><img src="{{URL::asset('Home_files/team-real-madrid-41x59.png')}}" alt="" width="41" height="59">
             </figure>
             <div class="game-result-team-name">Real madrid</div>
             <div class="game-result-team-country">Spain</div>
@@ -639,7 +639,7 @@
       <article class="game-result game-result-classic">
         <div class="game-result-main">
           <div class="game-result-team game-result-team-first">
-            <figure class="game-result-team-figure game-result-team-figure-big"><img src="./Home_files/team-bavaria-fc-56x52.png" alt="" width="56" height="52">
+            <figure class="game-result-team-figure game-result-team-figure-big"><img src="{{URL::asset('Home_files/team-bavaria-fc-56x52.png')}}" alt="" width="56" height="52">
             </figure>
             <div class="game-result-team-name">Bavaria FC</div>
             <div class="game-result-team-country">Germany</div>
@@ -666,7 +666,7 @@
             <div class="game-results-status">Away</div>
           </div>
           <div class="game-result-team game-result-team-second">
-            <figure class="game-result-team-figure game-result-team-figure-big"><img src="./Home_files/team-atletico-55x55.png" alt="" width="55" height="55">
+            <figure class="game-result-team-figure game-result-team-figure-big"><img src="{{URL::asset('Home_files/team-atletico-55x55.png')}}" alt="" width="55" height="55">
             </figure>
             <div class="game-result-team-name">Atletico</div>
             <div class="game-result-team-country">USA</div>
@@ -685,7 +685,7 @@
       <article class="game-result game-result-classic">
         <div class="game-result-main">
           <div class="game-result-team game-result-team-first">
-            <figure class="game-result-team-figure game-result-team-figure-big"><img src="./Home_files/team-atletico-55x55.png" alt="" width="55" height="55">
+            <figure class="game-result-team-figure game-result-team-figure-big"><img src="{{URL::asset('Home_files/team-atletico-55x55.png')}}" alt="" width="55" height="55">
             </figure>
             <div class="game-result-team-name">Atletico</div>
             <div class="game-result-team-country">USA</div>
@@ -712,7 +712,7 @@
             <div class="game-results-status">Home</div>
           </div>
           <div class="game-result-team game-result-team-second">
-            <figure class="game-result-team-figure game-result-team-figure-big"><img src="./Home_files/team-sevilla-57x46.png" alt="" width="57" height="46">
+            <figure class="game-result-team-figure game-result-team-figure-big"><img src="{{URL::asset('Home_files/team-sevilla-57x46.png')}}" alt="" width="57" height="46">
             </figure>
             <div class="game-result-team-name">Sevilla</div>
             <div class="game-result-team-country">Spain</div>
@@ -772,7 +772,7 @@
                               <div class="divider"></div>
                               <h5 class="awards-item-time">June 2015</h5>
                             </div>
-                            <div class="awards-item-aside"> <img src="./Home_files/thumbnail-minimal-2-68x126.png" alt="" width="68" height="126">
+                            <div class="awards-item-aside"> <img src="{{URL::asset('Home_files/thumbnail-minimal-2-68x126.png')}}" alt="" width="68" height="126">
                             </div>
                           </div></div><div class="owl-item cloned" style="width: 369.984px;"><div class="awards-item">
                             <div class="awards-item-main">
@@ -781,7 +781,7 @@
                               <div class="divider"></div>
                               <h5 class="awards-item-time">November 2016</h5>
                             </div>
-                            <div class="awards-item-aside"> <img src="./Home_files/thumbnail-minimal-3-73x135.png" alt="" width="73" height="135">
+                            <div class="awards-item-aside"> <img src="{{URL::asset('Home_files/thumbnail-minimal-3-73x135.png')}}" alt="" width="73" height="135">
                             </div>
                           </div></div><div class="owl-item" style="width: 369.984px;"><div class="awards-item">
                             <div class="awards-item-main">
@@ -790,7 +790,7 @@
                               <div class="divider"></div>
                               <h5 class="awards-item-time">December 2014</h5>
                             </div>
-                            <div class="awards-item-aside"> <img src="./Home_files/thumbnail-minimal-1-67x147.png" alt="" width="67" height="147">
+                            <div class="awards-item-aside"> <img src="{{URL::asset('Home_files/thumbnail-minimal-1-67x147.png')}}" alt="" width="67" height="147">
                             </div>
                           </div></div><div class="owl-item" style="width: 369.984px;"><div class="awards-item">
                             <div class="awards-item-main">
@@ -799,7 +799,7 @@
                               <div class="divider"></div>
                               <h5 class="awards-item-time">June 2015</h5>
                             </div>
-                            <div class="awards-item-aside"> <img src="./Home_files/thumbnail-minimal-2-68x126.png" alt="" width="68" height="126">
+                            <div class="awards-item-aside"> <img src="{{URL::asset('Home_files/thumbnail-minimal-2-68x126.png')}}" alt="" width="68" height="126">
                             </div>
                           </div></div><div class="owl-item active" style="width: 369.984px;"><div class="awards-item">
                             <div class="awards-item-main">
@@ -808,7 +808,7 @@
                               <div class="divider"></div>
                               <h5 class="awards-item-time">November 2016</h5>
                             </div>
-                            <div class="awards-item-aside"> <img src="./Home_files/thumbnail-minimal-3-73x135.png" alt="" width="73" height="135">
+                            <div class="awards-item-aside"> <img src="{{URL::asset('Home_files/thumbnail-minimal-3-73x135.png')}}" alt="" width="73" height="135">
                             </div>
                           </div></div><div class="owl-item cloned" style="width: 369.984px;"><div class="awards-item">
                             <div class="awards-item-main">
@@ -817,7 +817,7 @@
                               <div class="divider"></div>
                               <h5 class="awards-item-time">December 2014</h5>
                             </div>
-                            <div class="awards-item-aside"> <img src="./Home_files/thumbnail-minimal-1-67x147.png" alt="" width="67" height="147">
+                            <div class="awards-item-aside"> <img src="{{URL::asset('Home_files/thumbnail-minimal-1-67x147.png')}}" alt="" width="67" height="147">
                             </div>
                           </div></div><div class="owl-item cloned" style="width: 369.984px;"><div class="awards-item">
                             <div class="awards-item-main">
@@ -826,7 +826,7 @@
                               <div class="divider"></div>
                               <h5 class="awards-item-time">June 2015</h5>
                             </div>
-                            <div class="awards-item-aside"> <img src="./Home_files/thumbnail-minimal-2-68x126.png" alt="" width="68" height="126">
+                            <div class="awards-item-aside"> <img src="{{URL::asset('Home_files/thumbnail-minimal-2-68x126.png')}}" alt="" width="68" height="126">
                             </div>
                           </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div></div></div>
     </div>
@@ -854,7 +854,7 @@
             <tr>
               <td><span>1</span></td>
               <td class="team-inline">
-                <div class="team-figure"><img src="./Home_files/team-atletico-37x37.png" alt="" width="37" height="37">
+                <div class="team-figure"><img src="{{URL::asset('Home_files/team-atletico-37x37.png')}}" alt="" width="37" height="37">
                 </div>
                 <div class="team-title">
                   <div class="team-name">Atletico</div>
@@ -868,7 +868,7 @@
             <tr>
               <td><span>2</span></td>
               <td class="team-inline">
-                <div class="team-figure"><img src="./Home_files/team-sevilla-45x35.png" alt="" width="45" height="35">
+                <div class="team-figure"><img src="{{URL::asset('Home_files/team-sevilla-45x35.png')}}" alt="" width="45" height="35">
                 </div>
                 <div class="team-title">
                   <div class="team-name">Sevilla</div>
@@ -882,7 +882,7 @@
             <tr>
               <td><span>3</span></td>
               <td class="team-inline">
-                <div class="team-figure"><img src="./Home_files/team-real-madrid-29x43.png" alt="" width="29" height="43">
+                <div class="team-figure"><img src="{{URL::asset('Home_files/team-real-madrid-29x43.png')}}" alt="" width="29" height="43">
                 </div>
                 <div class="team-title">
                   <div class="team-name">Real Madrid</div>
@@ -896,7 +896,7 @@
             <tr>
               <td><span>4</span></td>
               <td class="team-inline">
-                <div class="team-figure"><img src="./Home_files/team-celta-vigo-37x34.png" alt="" width="37" height="34">
+                <div class="team-figure"><img src="{{URL::asset('Home_files/team-celta-vigo-37x34.png')}}" alt="" width="37" height="34">
                 </div>
                 <div class="team-title">
                   <div class="team-name">Celta Vigo</div>
@@ -910,7 +910,7 @@
             <tr>
               <td><span>5</span></td>
               <td class="team-inline">
-                <div class="team-figure"><img src="./Home_files/team-barcelona-36x31.png" alt="" width="36" height="31">
+                <div class="team-figure"><img src="{{URL::asset('Home_files/team-barcelona-36x31.png')}}" alt="" width="36" height="31">
                 </div>
                 <div class="team-title">
                   <div class="team-name">Barcelona</div>
@@ -924,7 +924,7 @@
             <tr>
               <td><span>6</span></td>
               <td class="team-inline">
-                <div class="team-figure"><img src="./Home_files/team-bavaria-fc-39x37.png" alt="" width="39" height="37">
+                <div class="team-figure"><img src="{{URL::asset('Home_files/team-bavaria-fc-39x37.png')}}" alt="" width="39" height="37">
                 </div>
                 <div class="team-title">
                   <div class="team-name">Bavaria FC</div>
@@ -950,22 +950,22 @@
 
       <article class="gallery" data-lightgallery="group">
         <div class="row row-10 row-narrow">
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item" href="images/gallery-soccer-1-original.jpg"><img src="./Home_files/gallery-soccer-1-116x116.jpg" alt="">
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item" href="{{URL::asset('images/gallery-soccer-1-original.jpg')}}"><img src="{{URL::asset('Home_files/gallery-soccer-1-116x116.jpg')}}" alt="">
               <div class="thumbnail-creative-overlay"></div></a>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item" href="images/gallery-soccer-2-original.jpg"><img src="./Home_files/gallery-soccer-2-116x116.jpg" alt="">
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item" href="{{URL::asset('images/gallery-soccer-2-original.jpg')}}"><img src="{{URL::asset('Home_files/gallery-soccer-2-116x116.jpg')}}" alt="">
               <div class="thumbnail-creative-overlay"></div></a>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item" href="images/gallery-soccer-3-original.jpg"><img src="./Home_files/gallery-soccer-3-116x116.jpg" alt="">
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item" href="{{URL::asset('images/gallery-soccer-3-original.jpg')}}"><img src="{{URL::asset('Home_files/gallery-soccer-3-116x116.jpg')}}" alt="">
               <div class="thumbnail-creative-overlay"></div></a>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item" href="images/gallery-soccer-4-original.jpg"><img src="./Home_files/gallery-soccer-4-116x116.jpg" alt="">
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item" href="{{URL::asset('images/gallery-soccer-4-original.jpg')}}"><img src="{{URL::asset('Home_files/gallery-soccer-4-116x116.jpg')}}" alt="">
               <div class="thumbnail-creative-overlay"></div></a>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item" href="images/gallery-soccer-5-original.jpg"><img src="./Home_files/gallery-soccer-5-116x116.jpg" alt="">
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item" href="{{URL::asset('images/gallery-soccer-5-original.jpg')}}"><img src="{{URL::asset('Home_files/gallery-soccer-5-116x116.jpg')}}" alt="">
               <div class="thumbnail-creative-overlay"></div></a>
           </div>
-          <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item" href="images/gallery-soccer-6-original.jpg"><img src="./Home_files/gallery-soccer-6-116x116.jpg" alt="">
+          <div class="col-6 col-sm-4 col-md-6 col-lg-4"><a class="thumbnail-creative" data-lightgallery="item" href="{{URL::asset('images/gallery-soccer-6-original.jpg')}}"><img src="{{URL::asset('Home_files/gallery-soccer-6-116x116.jpg')}}" alt="">
               <div class="thumbnail-creative-overlay"></div></a>
           </div>
         </div>
@@ -1031,7 +1031,7 @@
               <!-- Badge-->
               <div class="badge badge-shop">new
               </div>
-              <div class="product-figure"><img src="./Home_files/product-small-2.png" alt=""></div>
+              <div class="product-figure"><img src="{{URL::asset('Home_files/product-small-2.png')}}" alt=""></div>
               <div class="product-buttons">
                 <div class="product-button product-button-share fl-bigmug-line-share27" style="font-size: 22px">
                   <ul class="product-share">
@@ -1041,7 +1041,7 @@
                     <li class="product-share-item"><a class="icon fa fa-twitter" href="#"></a></li>
                     <li class="product-share-item"><a class="icon fa fa-google-plus" href="#"></a></li>
                   </ul>
-                </div><a class="product-button fl-bigmug-line-shopping202" href="shopping-cart.html" style="font-size: 26px"></a><a class="product-button fl-bigmug-line-zoom60" href="images/shop/product-2-original.jpg" data-lightgallery="item" style="font-size: 25px"></a>
+                </div><a class="product-button fl-bigmug-line-shopping202" href="shopping-cart.html" style="font-size: 26px"></a><a class="product-button fl-bigmug-line-zoom60" href="{{URL::asset('images/shop/product-2-original.jpg')}}" data-lightgallery="item" style="font-size: 25px"></a>
               </div>
             </header>
             <footer class="product-content">
@@ -1058,7 +1058,7 @@
             </footer>
           </article></div><div class="owl-item cloned" style="width: 369.984px; margin-right: 30px;"><article class="product">
             <header class="product-header">
-              <div class="product-figure"><img src="./Home_files/product-small-3.png" alt=""></div>
+              <div class="product-figure"><img src="{{URL::asset('Home_files/product-small-3.png')}}" alt=""></div>
               <div class="product-buttons">
                 <div class="product-button product-button-share fl-bigmug-line-share27" style="font-size: 22px">
                   <ul class="product-share">
@@ -1068,7 +1068,7 @@
                     <li class="product-share-item"><a class="icon fa fa-twitter" href="#"></a></li>
                     <li class="product-share-item"><a class="icon fa fa-google-plus" href="#"></a></li>
                   </ul>
-                </div><a class="product-button fl-bigmug-line-shopping202" href="shopping-cart.html" style="font-size: 26px"></a><a class="product-button fl-bigmug-line-zoom60" href="images/shop/product-3-original.jpg" data-lightgallery="item" style="font-size: 25px"></a>
+                </div><a class="product-button fl-bigmug-line-shopping202" href="shopping-cart.html" style="font-size: 26px"></a><a class="product-button fl-bigmug-line-zoom60" href="{{URL::asset('images/shop/product-3-original.jpg')}}" data-lightgallery="item" style="font-size: 25px"></a>
               </div>
             </header>
             <footer class="product-content">
@@ -1088,7 +1088,7 @@
               <!-- Badge-->
               <div class="badge badge-red">hot<span class="icon material-icons-whatshot"></span>
               </div>
-              <div class="product-figure"><img src="./Home_files/product-small-1.png" alt=""></div>
+              <div class="product-figure"><img src="{{URL::asset('Home_files/product-small-1.png')}}" alt=""></div>
               <div class="product-buttons">
                 <div class="product-button product-button-share fl-bigmug-line-share27" style="font-size: 22px">
                   <ul class="product-share">
@@ -1098,7 +1098,7 @@
                     <li class="product-share-item"><a class="icon fa fa-twitter" href="#"></a></li>
                     <li class="product-share-item"><a class="icon fa fa-google-plus" href="#"></a></li>
                   </ul>
-                </div><a class="product-button fl-bigmug-line-shopping202" href="shopping-cart.html" style="font-size: 26px"></a><a class="product-button fl-bigmug-line-zoom60" href="images/shop/product-1-original.jpg" data-lightgallery="item" style="font-size: 25px"></a>
+                </div><a class="product-button fl-bigmug-line-shopping202" href="shopping-cart.html" style="font-size: 26px"></a><a class="product-button fl-bigmug-line-zoom60" href="{{URL::asset('images/shop/product-1-original.jpg')}}" data-lightgallery="item" style="font-size: 25px"></a>
               </div>
             </header>
             <footer class="product-content">
@@ -1118,7 +1118,7 @@
               <!-- Badge-->
               <div class="badge badge-shop">new
               </div>
-              <div class="product-figure"><img src="./Home_files/product-small-2.png" alt=""></div>
+              <div class="product-figure"><img src="{{URL::asset('Home_files/product-small-2.png')}}" alt=""></div>
               <div class="product-buttons">
                 <div class="product-button product-button-share fl-bigmug-line-share27" style="font-size: 22px">
                   <ul class="product-share">
@@ -1128,7 +1128,7 @@
                     <li class="product-share-item"><a class="icon fa fa-twitter" href="#"></a></li>
                     <li class="product-share-item"><a class="icon fa fa-google-plus" href="#"></a></li>
                   </ul>
-                </div><a class="product-button fl-bigmug-line-shopping202" href="shopping-cart.html" style="font-size: 26px"></a><a class="product-button fl-bigmug-line-zoom60" href="images/shop/product-2-original.jpg" data-lightgallery="item" style="font-size: 25px"></a>
+                </div><a class="product-button fl-bigmug-line-shopping202" href="shopping-cart.html" style="font-size: 26px"></a><a class="product-button fl-bigmug-line-zoom60" href="{{URL::asset('images/shop/product-2-original.jpg')}}" data-lightgallery="item" style="font-size: 25px"></a>
               </div>
             </header>
             <footer class="product-content">
@@ -1145,7 +1145,7 @@
             </footer>
           </article></div><div class="owl-item" style="width: 369.984px; margin-right: 30px;"><article class="product">
             <header class="product-header">
-              <div class="product-figure"><img src="./Home_files/product-small-3.png" alt=""></div>
+              <div class="product-figure"><img src="{{URL::asset('Home_files/product-small-3.png')}}" alt=""></div>
               <div class="product-buttons">
                 <div class="product-button product-button-share fl-bigmug-line-share27" style="font-size: 22px">
                   <ul class="product-share">
@@ -1155,7 +1155,7 @@
                     <li class="product-share-item"><a class="icon fa fa-twitter" href="#"></a></li>
                     <li class="product-share-item"><a class="icon fa fa-google-plus" href="#"></a></li>
                   </ul>
-                </div><a class="product-button fl-bigmug-line-shopping202" href="shopping-cart.html" style="font-size: 26px"></a><a class="product-button fl-bigmug-line-zoom60" href="images/shop/product-3-original.jpg" data-lightgallery="item" style="font-size: 25px"></a>
+                </div><a class="product-button fl-bigmug-line-shopping202" href="shopping-cart.html" style="font-size: 26px"></a><a class="product-button fl-bigmug-line-zoom60" href="{{URL::asset('images/shop/product-3-original.jpg')}}" data-lightgallery="item" style="font-size: 25px"></a>
               </div>
             </header>
             <footer class="product-content">
@@ -1175,7 +1175,7 @@
               <!-- Badge-->
               <div class="badge badge-red">hot<span class="icon material-icons-whatshot"></span>
               </div>
-              <div class="product-figure"><img src="./Home_files/product-small-1.png" alt=""></div>
+              <div class="product-figure"><img src="{{URL::asset('Home_files/product-small-1.png')}}" alt=""></div>
               <div class="product-buttons">
                 <div class="product-button product-button-share fl-bigmug-line-share27" style="font-size: 22px">
                   <ul class="product-share">
@@ -1185,7 +1185,7 @@
                     <li class="product-share-item"><a class="icon fa fa-twitter" href="#"></a></li>
                     <li class="product-share-item"><a class="icon fa fa-google-plus" href="#"></a></li>
                   </ul>
-                </div><a class="product-button fl-bigmug-line-shopping202" href="shopping-cart.html" style="font-size: 26px"></a><a class="product-button fl-bigmug-line-zoom60" href="images/shop/product-1-original.jpg" data-lightgallery="item" style="font-size: 25px"></a>
+                </div><a class="product-button fl-bigmug-line-shopping202" href="shopping-cart.html" style="font-size: 26px"></a><a class="product-button fl-bigmug-line-zoom60" href="{{URL::asset('images/shop/product-1-original.jpg')}}" data-lightgallery="item" style="font-size: 25px"></a>
               </div>
             </header>
             <footer class="product-content">
@@ -1205,7 +1205,7 @@
               <!-- Badge-->
               <div class="badge badge-shop">new
               </div>
-              <div class="product-figure"><img src="./Home_files/product-small-2.png" alt=""></div>
+              <div class="product-figure"><img src="{{URL::asset('Home_files/product-small-2.png')}}" alt=""></div>
               <div class="product-buttons">
                 <div class="product-button product-button-share fl-bigmug-line-share27" style="font-size: 22px">
                   <ul class="product-share">
@@ -1215,7 +1215,7 @@
                     <li class="product-share-item"><a class="icon fa fa-twitter" href="#"></a></li>
                     <li class="product-share-item"><a class="icon fa fa-google-plus" href="#"></a></li>
                   </ul>
-                </div><a class="product-button fl-bigmug-line-shopping202" href="shopping-cart.html" style="font-size: 26px"></a><a class="product-button fl-bigmug-line-zoom60" href="images/shop/product-2-original.jpg" data-lightgallery="item" style="font-size: 25px"></a>
+                </div><a class="product-button fl-bigmug-line-shopping202" href="shopping-cart.html" style="font-size: 26px"></a><a class="product-button fl-bigmug-line-zoom60" href="{{URL::asset('images/shop/product-2-original.jpg')}}" data-lightgallery="item" style="font-size: 25px"></a>
               </div>
             </header>
             <footer class="product-content">

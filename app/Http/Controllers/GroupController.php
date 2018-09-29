@@ -13,17 +13,27 @@ class GroupController extends Controller
       $groups = Group::all();
       return view('club.groups', compact('groups'));
     }
+
     public function create(Request $request){
       $name = $request->name;
       $user = $request->user;
       $club = $request->club;
-      $group = //DB::tabel('groups')->insert(['name' => $name, 'creator' => $user, 'club' => $club]);
+      $group =
       Group::create([
             'name' => $name,
             'creator' => $user,
             'club' => $club,
           ]);
-      if($group){return response()->json(['status' => true]);}
+      if($group){
+        $id = Group::where('name',$name)->where('creator',$user)->where('club',$club)->first()->id;
+        return response()->json(['status' => true, 'id' => $id]);
+      }
       else{return response()->json(['status' => false]);}
+    }
+
+    public function view($group,Request $request){
+      $group = implode(' ', explode('-', $group));
+      $group = Group::where('name',$group)->first();
+      return view('club.group', compact('group'));
     }
 }
