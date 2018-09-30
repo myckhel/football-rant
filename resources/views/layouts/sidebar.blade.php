@@ -225,7 +225,8 @@
                               <path fill="#171617" d="M1.584,0h1.8L2.112,4.68H0L1.584,0z M5.112,0h1.776L5.64,4.68H3.528L5.112,0z"></path>
                             </svg>
                             <div class="comment-classic-header">
-                              <div class="comment-classic-header-aside"><img src="{{URL::asset('Home_files/user-1-63x63.jpg')}}" alt="" width="63" height="63">
+                              <div class="comment-classic-header-aside">
+                                <img src="{{URL::asset('Home_files/user-1-63x63.jpg')}}" alt="" width="63" height="63">
                               </div>
                               <div class="comment-classic-header-main">
                                 <p class="comment-classic-title">Amanda Norton</p>

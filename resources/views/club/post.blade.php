@@ -22,7 +22,7 @@
           </div>
           <h3 class="blog-post-title">Coutinho’s camp: it was all barca’s fault and we can prove it</h3>
           <div class="blog-post-header">
-            <div class="blog-post-author"><img class="img-circle" src="./Home_files/user-3-63x63.jpg" alt="" width="63" height="63">
+            <div class="blog-post-author"><img class="img-circle" src="{{URL::asset('Home_files/user-3-63x63.jpg')}}" alt="" width="63" height="63">
               <p class="post-author">Katrin Burns</p>
             </div>
             <div class="blog-post-meta">
@@ -45,7 +45,7 @@
           </div>
           <div class="blog-post-content">
             <p>The Independent claims the player is ready for talks to settle any potential bad blood. It’s understood Liverpool rejected three bids from the Catalans with the final figure believed to be a £118million offer, which in fact proved to be just £82million up front with the rest in add-ons. Barca had imposed a 7pm Sunday deadline on Liverpool to agree to an offer that they had already rejected 48 hours earlier.</p>
-            <p>The Reds sporting director Michael Edwards ignored their deadline as Liverpool stuck to their stance that the player was not for sale at any price.</p><img src="./Home_files/blog-post-1-683x407.jpg" alt="" width="683" height="407">
+            <p>The Reds sporting director Michael Edwards ignored their deadline as Liverpool stuck to their stance that the player was not for sale at any price.</p><img src="{{URL::asset('Home_files/blog-post-1-683x407.jpg')}}" alt="" width="683" height="407">
             <p>The report of the Independent says: “People within the 25-year-old midfielder’s entourage are pointing the finger at Barcelona for manipulating their client and have suggested the Nou Camp club used family members to provide additional pressure. They insist the ill-conceived email was Barca’s idea.” Still, there’s no updates on how this situation can be resolved.</p>
             <!-- Quote Default-->
             <article class="quote-default">
@@ -80,7 +80,7 @@
 
               <!-- Post Carmen-->
 
-            <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-800px, 0px, 0px); transition: all 0s ease 0s; width: 2800px;"><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="./Home_files/news-5-3-369x343.jpg" alt="" width="369" height="343">
+            <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-800px, 0px, 0px); transition: all 0s ease 0s; width: 2800px;"><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="{{URL::asset('Home_files/news-5-3-369x343.jpg')}}" alt="" width="369" height="343">
                 <div class="post-carmen-header">
                   <!-- Post Video Button--><a class="post-video-button" href="blog-post.html#modal1" data-toggle="modal"><span class="icon material-icons-play_arrow"></span></a>
                 </div>
@@ -95,7 +95,7 @@
                     </div>
                   </div>
                 </div>
-              </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="./Home_files/news-5-4-369x343.jpg" alt="" width="369" height="343">
+              </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="{{URL::asset('Home_files/news-5-4-369x343.jpg')}}" alt="" width="369" height="343">
                 <div class="post-carmen-header">
                   <!-- Badge-->
                   <div class="badge badge-primary">The League
@@ -112,7 +112,7 @@
                     </div>
                   </div>
                 </div>
-              </article></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="./Home_files/news-5-2-369x343.jpg" alt="" width="369" height="343">
+              </article></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="{{URL::asset('Home_files/news-5-2-369x343.jpg')}}" alt="" width="369" height="343">
                 <div class="post-carmen-header">
                   <!-- Badge-->
                   <div class="badge badge-secondary">The Team
@@ -129,7 +129,7 @@
                     </div>
                   </div>
                 </div>
-              </article></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="./Home_files/news-5-3-369x343.jpg" alt="" width="369" height="343">
+              </article></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="{{URL::asset('Home_files/news-5-3-369x343.jpg')}}" alt="" width="369" height="343">
                 <div class="post-carmen-header">
                   <!-- Post Video Button--><a class="post-video-button" href="blog-post.html#modal1" data-toggle="modal"><span class="icon material-icons-play_arrow"></span></a>
                 </div>
@@ -144,7 +144,7 @@
                     </div>
                   </div>
                 </div>
-              </article></div><div class="owl-item" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="./Home_files/news-5-4-369x343.jpg" alt="" width="369" height="343">
+              </article></div><div class="owl-item" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="{{URL::asset('Home_files/news-5-4-369x343.jpg')}}" alt="" width="369" height="343">
                 <div class="post-carmen-header">
                   <!-- Badge-->
                   <div class="badge badge-primary">The League
@@ -161,7 +161,7 @@
                     </div>
                   </div>
                 </div>
-              </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="./Home_files/news-5-2-369x343.jpg" alt="" width="369" height="343">
+              </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="{{URL::asset('Home_files/news-5-2-369x343.jpg')}}" alt="" width="369" height="343">
                 <div class="post-carmen-header">
                   <!-- Badge-->
                   <div class="badge badge-secondary">The Team
@@ -178,7 +178,7 @@
                     </div>
                   </div>
                 </div>
-              </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="./Home_files/news-5-3-369x343.jpg" alt="" width="369" height="343">
+              </article></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><article class="post-carmen"><img src="{{URL::asset('Home_files/news-5-3-369x343.jpg')}}" alt="" width="369" height="343">
                 <div class="post-carmen-header">
                   <!-- Post Video Button--><a class="post-video-button" href="blog-post.html#modal1" data-toggle="modal"><span class="icon material-icons-play_arrow"></span></a>
                 </div>
@@ -209,7 +209,7 @@
             <div class="blog-post-comments">
               <!-- Post Comment-->
               <div class="post-comment post-comment-parent">
-                <div class="post-comment-aside"><img class="img-circle" src="./Home_files/user-4-69x69.jpg" alt="" width="69" height="69">
+                <div class="post-comment-aside"><img class="img-circle" src="{{URL::asset('Home_files/user-4-69x69.jpg')}}" alt="" width="69" height="69">
                 </div>
                 <div class="post-comment-main">
                   <div class="post-comment-header">
@@ -228,7 +228,7 @@
               </div>
               <!-- Post Comment-->
               <div class="post-comment post-comment-child">
-                <div class="post-comment-aside"><img class="img-circle" src="./Home_files/user-5-69x69.jpg" alt="" width="69" height="69">
+                <div class="post-comment-aside"><img class="img-circle" src="{{URL::asset('Home_files/user-5-69x69.jpg')}}" alt="" width="69" height="69">
                 </div>
                 <div class="post-comment-main">
                   <div class="post-comment-header">
@@ -247,7 +247,7 @@
               </div>
               <!-- Post Comment-->
               <div class="post-comment">
-                <div class="post-comment-aside"><img class="img-circle" src="./Home_files/user-6-69x69.jpg" alt="" width="69" height="69">
+                <div class="post-comment-aside"><img class="img-circle" src="{{URL::asset('Home_files/user-6-69x69.jpg')}}" alt="" width="69" height="69">
                 </div>
                 <div class="post-comment-main">
                   <div class="post-comment-header">
@@ -265,7 +265,7 @@
                 </div>
               </div>
               <div class="comment-box">
-                <div class="comment-box-aside"><img class="img-circle" src="./Home_files/user-7-69x69.jpg" alt="" width="69" height="69">
+                <div class="comment-box-aside"><img class="img-circle" src="{{URL::asset('Home_files/user-7-69x69.jpg')}}" alt="" width="69" height="69">
                 </div>
                 <div class="comment-box-main">
                   <h5 class="comment-box-name">Miranda</h5>

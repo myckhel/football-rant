@@ -29,12 +29,12 @@
             <button class="button button-nav button-prev" data-nav-prev=""><span class="icon mdi mdi-chevron-left"></span></button>
             <!-- Nav tabs-->
             <ul class="nav nav-tabs">
-              <li class="nav-item" role="presentation"><a class="nav-link active" href="about-us.html#tabs-1-1" data-toggle="tab"><span>2012-2018</span></a></li>
-              <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html#tabs-1-2" data-toggle="tab"><span> 2001-2012</span></a></li>
-              <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html#tabs-1-3" data-toggle="tab"><span> 1997-2001</span></a></li>
-              <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html#tabs-1-4" data-toggle="tab"><span> 1994-1997</span></a></li>
-              <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html#tabs-1-5" data-toggle="tab"><span> 1988-1994</span></a></li>
-              <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html#tabs-1-6" data-toggle="tab"><span> 1970-1988</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-1-1" data-toggle="tab"><span>2012-2018</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2" data-toggle="tab"><span> 2001-2012</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-3" data-toggle="tab"><span> 1997-2001</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-4" data-toggle="tab"><span> 1994-1997</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-5" data-toggle="tab"><span> 1988-1994</span></a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-6" data-toggle="tab"><span> 1970-1988</span></a></li>
             </ul>
             <button class="button button-nav button-next" data-nav-next=""><span class="icon mdi mdi-chevron-right"></span></button>
           </div>
@@ -52,7 +52,7 @@
                   <div class="col-lg-6">
                     <!-- Owl Carousel-->
                     <div class="owl-carousel owl-carousel-dots-modern owl-loaded" data-items="1" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="false">
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1587px;"><div class="owl-item active" style="width: 529px;"><img src="./Home_files/about-us-1-529x350.jpg" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="./Home_files/about-us-2-529x350.jpg" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="./Home_files/about-us-3-529x350.jpg" alt="" width="529" height="350"></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1587px;"><div class="owl-item active" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-1-529x350.jpg')}}" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-2-529x350.jpg')}}" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-3-529x350.jpg')}}" alt="" width="529" height="350"></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
                   </div>
                 </div>
               </div>
@@ -60,7 +60,7 @@
                 <div class="row row-30">
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-1-67x147.png" alt="" width="67" height="147">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-1-67x147.png')}}" alt="" width="67" height="147">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>European Cups</p>
@@ -72,7 +72,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-2-68x126.png" alt="" width="68" height="126">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-2-68x126.png')}}" alt="" width="68" height="126">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>FIFA World Cups</p>
@@ -84,7 +84,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-3-73x135.png" alt="" width="73" height="135">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-3-73x135.png')}}" alt="" width="73" height="135">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>American Cups</p>
@@ -96,7 +96,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-4-68x126.png" alt="" width="68" height="126">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-4-68x126.png')}}" alt="" width="68" height="126">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>International Cups</p>
@@ -121,7 +121,7 @@
                   <div class="col-lg-6">
                     <!-- Owl Carousel-->
                     <div class="owl-carousel owl-carousel-dots-modern owl-loaded" data-items="1" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="false">
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1587px;"><div class="owl-item active" style="width: 529px;"><img src="./Home_files/about-us-1-529x350.jpg" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="./Home_files/about-us-2-529x350.jpg" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="./Home_files/about-us-3-529x350.jpg" alt="" width="529" height="350"></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1587px;"><div class="owl-item active" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-1-529x350.jpg')}}" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-2-529x350.jpg')}}" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-3-529x350.jpg')}}" alt="" width="529" height="350"></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
                   </div>
                 </div>
               </div>
@@ -129,7 +129,7 @@
                 <div class="row row-30">
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-1-67x147.png" alt="" width="67" height="147">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-1-67x147.png')}}" alt="" width="67" height="147">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>European Cups</p>
@@ -141,7 +141,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-2-68x126.png" alt="" width="68" height="126">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-2-68x126.png')}}" alt="" width="68" height="126">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>FIFA World Cups</p>
@@ -153,7 +153,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-3-73x135.png" alt="" width="73" height="135">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-3-73x135.png')}}" alt="" width="73" height="135">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>American Cups</p>
@@ -165,7 +165,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-4-68x126.png" alt="" width="68" height="126">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-4-68x126.png')}}" alt="" width="68" height="126">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>International Cups</p>
@@ -190,7 +190,7 @@
                   <div class="col-lg-6">
                     <!-- Owl Carousel-->
                     <div class="owl-carousel owl-carousel-dots-modern owl-loaded" data-items="1" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="false">
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1587px;"><div class="owl-item active" style="width: 529px;"><img src="./Home_files/about-us-1-529x350.jpg" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="./Home_files/about-us-2-529x350.jpg" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="./Home_files/about-us-3-529x350.jpg" alt="" width="529" height="350"></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1587px;"><div class="owl-item active" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-1-529x350.jpg')}}" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-2-529x350.jpg')}}" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-3-529x350.jpg')}}" alt="" width="529" height="350"></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
                   </div>
                 </div>
               </div>
@@ -198,7 +198,7 @@
                 <div class="row row-30">
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-1-67x147.png" alt="" width="67" height="147">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-1-67x147.png')}}" alt="" width="67" height="147">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>European Cups</p>
@@ -210,7 +210,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-2-68x126.png" alt="" width="68" height="126">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-2-68x126.png')}}" alt="" width="68" height="126">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>FIFA World Cups</p>
@@ -222,7 +222,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-3-73x135.png" alt="" width="73" height="135">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-3-73x135.png')}}" alt="" width="73" height="135">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>American Cups</p>
@@ -234,7 +234,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-4-68x126.png" alt="" width="68" height="126">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-4-68x126.png')}}" alt="" width="68" height="126">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>International Cups</p>
@@ -259,7 +259,7 @@
                   <div class="col-lg-6">
                     <!-- Owl Carousel-->
                     <div class="owl-carousel owl-carousel-dots-modern owl-loaded" data-items="1" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="false">
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1587px;"><div class="owl-item active" style="width: 529px;"><img src="./Home_files/about-us-1-529x350.jpg" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="./Home_files/about-us-2-529x350.jpg" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="./Home_files/about-us-3-529x350.jpg" alt="" width="529" height="350"></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1587px;"><div class="owl-item active" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-1-529x350.jpg')}}" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-2-529x350.jpg')}}" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-3-529x350.jpg')}}" alt="" width="529" height="350"></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
                   </div>
                 </div>
               </div>
@@ -267,7 +267,7 @@
                 <div class="row row-30">
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-1-67x147.png" alt="" width="67" height="147">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-1-67x147.png')}}" alt="" width="67" height="147">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>European Cups</p>
@@ -279,7 +279,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-2-68x126.png" alt="" width="68" height="126">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-2-68x126.png')}}" alt="" width="68" height="126">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>FIFA World Cups</p>
@@ -291,7 +291,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-3-73x135.png" alt="" width="73" height="135">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-3-73x135.png')}}" alt="" width="73" height="135">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>American Cups</p>
@@ -303,7 +303,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-4-68x126.png" alt="" width="68" height="126">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-4-68x126.png')}}" alt="" width="68" height="126">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>International Cups</p>
@@ -328,7 +328,7 @@
                   <div class="col-lg-6">
                     <!-- Owl Carousel-->
                     <div class="owl-carousel owl-carousel-dots-modern owl-loaded" data-items="1" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="false">
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1587px;"><div class="owl-item active" style="width: 529px;"><img src="./Home_files/about-us-1-529x350.jpg" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="./Home_files/about-us-2-529x350.jpg" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="./Home_files/about-us-3-529x350.jpg" alt="" width="529" height="350"></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1587px;"><div class="owl-item active" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-1-529x350.jpg')}}" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-2-529x350.jpg')}}" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-3-529x350.jpg')}}" alt="" width="529" height="350"></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
                   </div>
                 </div>
               </div>
@@ -336,7 +336,7 @@
                 <div class="row row-30">
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-1-67x147.png" alt="" width="67" height="147">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-1-67x147.png')}}" alt="" width="67" height="147">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>European Cups</p>
@@ -348,7 +348,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-2-68x126.png" alt="" width="68" height="126">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-2-68x126.png')}}" alt="" width="68" height="126">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>FIFA World Cups</p>
@@ -360,7 +360,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-3-73x135.png" alt="" width="73" height="135">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-3-73x135.png')}}" alt="" width="73" height="135">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>American Cups</p>
@@ -372,7 +372,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-4-68x126.png" alt="" width="68" height="126">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-4-68x126.png')}}" alt="" width="68" height="126">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>International Cups</p>
@@ -397,7 +397,7 @@
                   <div class="col-lg-6">
                     <!-- Owl Carousel-->
                     <div class="owl-carousel owl-carousel-dots-modern owl-loaded" data-items="1" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="false">
-                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1587px;"><div class="owl-item active" style="width: 529px;"><img src="./Home_files/about-us-1-529x350.jpg" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="./Home_files/about-us-2-529x350.jpg" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="./Home_files/about-us-3-529x350.jpg" alt="" width="529" height="350"></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1587px;"><div class="owl-item active" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-1-529x350.jpg')}}" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-2-529x350.jpg')}}" alt="" width="529" height="350"></div><div class="owl-item" style="width: 529px;"><img src="{{URL::asset('Home_files/about-us-3-529x350.jpg')}}" alt="" width="529" height="350"></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
                   </div>
                 </div>
               </div>
@@ -405,7 +405,7 @@
                 <div class="row row-30">
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-1-67x147.png" alt="" width="67" height="147">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-1-67x147.png')}}" alt="" width="67" height="147">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>European Cups</p>
@@ -417,7 +417,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-2-68x126.png" alt="" width="68" height="126">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-2-68x126.png')}}" alt="" width="68" height="126">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>FIFA World Cups</p>
@@ -429,7 +429,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-3-73x135.png" alt="" width="73" height="135">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-3-73x135.png')}}" alt="" width="73" height="135">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>American Cups</p>
@@ -441,7 +441,7 @@
                   </div>
                   <div class="col-6 col-md-3">
                     <div class="thumbnail-minimal">
-                      <div class="thumbnail-minimal-figure"><img src="./Home_files/thumbnail-minimal-4-68x126.png" alt="" width="68" height="126">
+                      <div class="thumbnail-minimal-figure"><img src="{{URL::asset('Home_files/thumbnail-minimal-4-68x126.png')}}" alt="" width="68" height="126">
                       </div>
                       <div class="thumbnail-minimal-title">
                         <p>International Cups</p>
@@ -475,7 +475,7 @@
     <div class="row row-30">
       <div class="col-sm-6 col-lg-4">
               <!-- Player Info Modern-->
-              <div class="player-info-modern"><a class="player-info-modern-figure" href="about-us.html#"><img src="./Home_files/roster-player-1-368x286.png" alt="" width="368" height="286"></a>
+              <div class="player-info-modern"><a class="player-info-modern-figure" href="about-us.html#"><img src="{{URL::asset('Home_files/roster-player-1-368x286.png')}}" alt="" width="368" height="286"></a>
                 <div class="player-info-modern-footer">
                   <div class="player-info-modern-number">
                     <p>10</p>
@@ -511,7 +511,7 @@
       </div>
       <div class="col-sm-6 col-lg-4">
               <!-- Player Info Modern-->
-              <div class="player-info-modern"><a class="player-info-modern-figure" href="about-us.html#"><img src="./Home_files/roster-player-5-368x286.png" alt="" width="368" height="286"></a>
+              <div class="player-info-modern"><a class="player-info-modern-figure" href="about-us.html#"><img src="{{URL::asset('Home_files/roster-player-5-368x286.png')}}" alt="" width="368" height="286"></a>
                 <div class="player-info-modern-footer">
                   <div class="player-info-modern-number">
                     <p>06</p>
@@ -547,7 +547,7 @@
       </div>
       <div class="col-sm-6 col-lg-4">
               <!-- Player Info Modern-->
-              <div class="player-info-modern"><a class="player-info-modern-figure" href="about-us.html#"><img src="./Home_files/player-2-368x286.png" alt="" width="368" height="286"></a>
+              <div class="player-info-modern"><a class="player-info-modern-figure" href="about-us.html#"><img src="{{URL::asset('Home_files/player-2-368x286.png')}}" alt="" width="368" height="286"></a>
                 <div class="player-info-modern-footer">
                   <div class="player-info-modern-number">
                     <p>07</p>
@@ -583,7 +583,7 @@
       </div>
       <div class="col-sm-6 col-lg-4">
               <!-- Player Info Modern-->
-              <div class="player-info-modern"><a class="player-info-modern-figure" href="about-us.html#"><img src="./Home_files/roster-player-2-368x286.png" alt="" width="368" height="286"></a>
+              <div class="player-info-modern"><a class="player-info-modern-figure" href="about-us.html#"><img src="{{URL::asset('Home_files/roster-player-2-368x286.png')}}" alt="" width="368" height="286"></a>
                 <div class="player-info-modern-footer">
                   <div class="player-info-modern-number">
                     <p>02</p>
@@ -619,7 +619,7 @@
       </div>
       <div class="col-sm-6 col-lg-4">
               <!-- Player Info Modern-->
-              <div class="player-info-modern"><a class="player-info-modern-figure" href="about-us.html#"><img src="./Home_files/roster-player-3-368x286.png" alt="" width="368" height="286"></a>
+              <div class="player-info-modern"><a class="player-info-modern-figure" href="about-us.html#"><img src="{{URL::asset('Home_files/roster-player-3-368x286.png')}}" alt="" width="368" height="286"></a>
                 <div class="player-info-modern-footer">
                   <div class="player-info-modern-number">
                     <p>03</p>
@@ -655,7 +655,7 @@
       </div>
       <div class="col-sm-6 col-lg-4">
               <!-- Player Info Modern-->
-              <div class="player-info-modern player-info-modern-accent"><a class="player-info-modern-figure" href="about-us.html#"><img src="./Home_files/roster-player-4-368x286.png" alt="" width="368" height="286"></a>
+              <div class="player-info-modern player-info-modern-accent"><a class="player-info-modern-figure" href="about-us.html#"><img src="{{URL::asset('Home_files/roster-player-4-368x286.png')}}" alt="" width="368" height="286"></a>
                 <div class="player-info-modern-footer">
                   <div class="player-info-modern-number"><span class="icon fa-weixin"></span>
                   </div>
@@ -740,7 +740,7 @@
                   <article class="game-result game-result-classic">
                     <div class="game-result-main">
                       <div class="game-result-team game-result-team-first">
-                        <figure class="game-result-team-figure game-result-team-figure-big"><img src="./Home_files/team-atletico-55x55.png" alt="" width="55" height="55">
+                        <figure class="game-result-team-figure game-result-team-figure-big"><img src="{{URL::asset('Home_files/team-atletico-55x55.png')}}" alt="" width="55" height="55">
                         </figure>
                         <div class="game-result-team-name">Atletico</div>
                         <div class="game-result-team-country">USA</div>
@@ -767,7 +767,7 @@
                         <div class="game-results-status">Home</div>
                       </div>
                       <div class="game-result-team game-result-team-second">
-                        <figure class="game-result-team-figure game-result-team-figure-big"><img src="./Home_files/team-real-madrid-41x59.png" alt="" width="41" height="59">
+                        <figure class="game-result-team-figure game-result-team-figure-big"><img src="{{URL::asset('Home_files/team-real-madrid-41x59.png')}}" alt="" width="41" height="59">
                         </figure>
                         <div class="game-result-team-name">Real madrid</div>
                         <div class="game-result-team-country">Spain</div>
@@ -788,7 +788,7 @@
                   <article class="game-result game-result-classic">
                     <div class="game-result-main">
                       <div class="game-result-team game-result-team-first">
-                        <figure class="game-result-team-figure game-result-team-figure-big"><img src="./Home_files/team-bavaria-fc-56x52.png" alt="" width="56" height="52">
+                        <figure class="game-result-team-figure game-result-team-figure-big"><img src="{{URL::asset('Home_files/team-bavaria-fc-56x52.png')}}" alt="" width="56" height="52">
                         </figure>
                         <div class="game-result-team-name">Bavaria FC</div>
                         <div class="game-result-team-country">Germany</div>
@@ -815,7 +815,7 @@
                         <div class="game-results-status">Away</div>
                       </div>
                       <div class="game-result-team game-result-team-second">
-                        <figure class="game-result-team-figure game-result-team-figure-big"><img src="./Home_files/team-atletico-55x55.png" alt="" width="55" height="55">
+                        <figure class="game-result-team-figure game-result-team-figure-big"><img src="{{URL::asset('Home_files/team-atletico-55x55.png')}}" alt="" width="55" height="55">
                         </figure>
                         <div class="game-result-team-name">Atletico</div>
                         <div class="game-result-team-country">USA</div>
@@ -836,7 +836,7 @@
                   <article class="game-result game-result-classic">
                     <div class="game-result-main">
                       <div class="game-result-team game-result-team-first">
-                        <figure class="game-result-team-figure game-result-team-figure-big"><img src="./Home_files/team-atletico-55x55.png" alt="" width="55" height="55">
+                        <figure class="game-result-team-figure game-result-team-figure-big"><img src="{{URL::asset('Home_files/team-atletico-55x55.png')}}" alt="" width="55" height="55">
                         </figure>
                         <div class="game-result-team-name">Atletico</div>
                         <div class="game-result-team-country">USA</div>
@@ -863,7 +863,7 @@
                         <div class="game-results-status">Home</div>
                       </div>
                       <div class="game-result-team game-result-team-second">
-                        <figure class="game-result-team-figure game-result-team-figure-big"><img src="./Home_files/team-sevilla-57x46.png" alt="" width="57" height="46">
+                        <figure class="game-result-team-figure game-result-team-figure-big"><img src="{{URL::asset('Home_files/team-sevilla-57x46.png')}}" alt="" width="57" height="46">
                         </figure>
                         <div class="game-result-team-name">Sevilla</div>
                         <div class="game-result-team-country">Spain</div>
@@ -884,7 +884,7 @@
                   <article class="game-result game-result-classic">
                     <div class="game-result-main">
                       <div class="game-result-team game-result-team-first">
-                        <figure class="game-result-team-figure game-result-team-figure-big"><img src="./Home_files/team-atletico-55x55.png" alt="" width="55" height="55">
+                        <figure class="game-result-team-figure game-result-team-figure-big"><img src="{{URL::asset('Home_files/team-atletico-55x55.png')}}" alt="" width="55" height="55">
                         </figure>
                         <div class="game-result-team-name">Atletico</div>
                         <div class="game-result-team-country">USA</div>
@@ -911,7 +911,7 @@
                         <div class="game-results-status">Home</div>
                       </div>
                       <div class="game-result-team game-result-team-second">
-                        <figure class="game-result-team-figure game-result-team-figure-big"><img src="./Home_files/team-barcelona-57x49.png" alt="" width="57" height="49">
+                        <figure class="game-result-team-figure game-result-team-figure-big"><img src="{{URL::asset('Home_files/team-barcelona-57x49.png')}}" alt="" width="57" height="49">
                         </figure>
                         <div class="game-result-team-name">Barcelona</div>
                         <div class="game-result-team-country">Spain</div>
@@ -953,7 +953,7 @@
                     <tr>
                       <td><span>1</span></td>
                       <td class="team-inline">
-                        <div class="team-figure"><img src="./Home_files/team-atletico-37x37.png" alt="" width="37" height="37">
+                        <div class="team-figure"><img src="{{URL::asset('Home_files/team-atletico-37x37.png')}}" alt="" width="37" height="37">
                         </div>
                         <div class="team-title">
                           <div class="team-name">Atletico</div>
@@ -967,7 +967,7 @@
                     <tr>
                       <td><span>2</span></td>
                       <td class="team-inline">
-                        <div class="team-figure"><img src="./Home_files/team-sevilla-45x35.png" alt="" width="45" height="35">
+                        <div class="team-figure"><img src="{{URL::asset('Home_files/team-sevilla-45x35.png')}}" alt="" width="45" height="35">
                         </div>
                         <div class="team-title">
                           <div class="team-name">Sevilla</div>
@@ -981,7 +981,7 @@
                     <tr>
                       <td><span>3</span></td>
                       <td class="team-inline">
-                        <div class="team-figure"><img src="./Home_files/team-real-madrid-29x43.png" alt="" width="29" height="43">
+                        <div class="team-figure"><img src="{{URL::asset('Home_files/team-real-madrid-29x43.png')}}" alt="" width="29" height="43">
                         </div>
                         <div class="team-title">
                           <div class="team-name">Real Madrid</div>
@@ -995,7 +995,7 @@
                     <tr>
                       <td><span>4</span></td>
                       <td class="team-inline">
-                        <div class="team-figure"><img src="./Home_files/team-celta-vigo-37x34.png" alt="" width="37" height="34">
+                        <div class="team-figure"><img src="{{URL::asset('Home_files/team-celta-vigo-37x34.png')}}" alt="" width="37" height="34">
                         </div>
                         <div class="team-title">
                           <div class="team-name">Celta Vigo</div>
@@ -1009,7 +1009,7 @@
                     <tr>
                       <td><span>5</span></td>
                       <td class="team-inline">
-                        <div class="team-figure"><img src="./Home_files/team-barcelona-36x31.png" alt="" width="36" height="31">
+                        <div class="team-figure"><img src="{{URL::asset('Home_files/team-barcelona-36x31.png')}}" alt="" width="36" height="31">
                         </div>
                         <div class="team-title">
                           <div class="team-name">Barcelona</div>
@@ -1023,7 +1023,7 @@
                     <tr>
                       <td><span>6</span></td>
                       <td class="team-inline">
-                        <div class="team-figure"><img src="./Home_files/team-bavaria-fc-39x37.png" alt="" width="39" height="37">
+                        <div class="team-figure"><img src="{{URL::asset('Home_files/team-bavaria-fc-39x37.png')}}" alt="" width="39" height="37">
                         </div>
                         <div class="team-title">
                           <div class="team-name">Bavaria FC</div>
@@ -1070,7 +1070,7 @@
                             <div class="divider"></div>
                             <h5 class="awards-item-time">June 2015</h5>
                           </div>
-                          <div class="awards-item-aside"> <img src="./Home_files/thumbnail-minimal-2-68x126.png" alt="" width="68" height="126">
+                          <div class="awards-item-aside"> <img src="{{URL::asset('Home_files/thumbnail-minimal-2-68x126.png')}}" alt="" width="68" height="126">
                           </div>
                         </div></div><div class="owl-item cloned" style="width: 369.984px;"><div class="awards-item">
                           <div class="awards-item-main">
@@ -1079,7 +1079,7 @@
                             <div class="divider"></div>
                             <h5 class="awards-item-time">November 2016</h5>
                           </div>
-                          <div class="awards-item-aside"> <img src="./Home_files/thumbnail-minimal-3-73x135.png" alt="" width="73" height="135">
+                          <div class="awards-item-aside"> <img src="{{URL::asset('Home_files/thumbnail-minimal-3-73x135.png')}}" alt="" width="73" height="135">
                           </div>
                         </div></div><div class="owl-item active" style="width: 369.984px;"><div class="awards-item">
                           <div class="awards-item-main">
@@ -1088,7 +1088,7 @@
                             <div class="divider"></div>
                             <h5 class="awards-item-time">December 2014</h5>
                           </div>
-                          <div class="awards-item-aside"> <img src="./Home_files/thumbnail-minimal-1-67x147.png" alt="" width="67" height="147">
+                          <div class="awards-item-aside"> <img src="{{URL::asset('Home_files/thumbnail-minimal-1-67x147.png')}}" alt="" width="67" height="147">
                           </div>
                         </div></div><div class="owl-item" style="width: 369.984px;"><div class="awards-item">
                           <div class="awards-item-main">
@@ -1097,7 +1097,7 @@
                             <div class="divider"></div>
                             <h5 class="awards-item-time">June 2015</h5>
                           </div>
-                          <div class="awards-item-aside"> <img src="./Home_files/thumbnail-minimal-2-68x126.png" alt="" width="68" height="126">
+                          <div class="awards-item-aside"> <img src="{{URL::asset('Home_files/thumbnail-minimal-2-68x126.png')}}" alt="" width="68" height="126">
                           </div>
                         </div></div><div class="owl-item" style="width: 369.984px;"><div class="awards-item">
                           <div class="awards-item-main">
@@ -1106,7 +1106,7 @@
                             <div class="divider"></div>
                             <h5 class="awards-item-time">November 2016</h5>
                           </div>
-                          <div class="awards-item-aside"> <img src="./Home_files/thumbnail-minimal-3-73x135.png" alt="" width="73" height="135">
+                          <div class="awards-item-aside"> <img src="{{URL::asset('Home_files/thumbnail-minimal-3-73x135.png')}}" alt="" width="73" height="135">
                           </div>
                         </div></div><div class="owl-item cloned" style="width: 369.984px;"><div class="awards-item">
                           <div class="awards-item-main">
@@ -1115,7 +1115,7 @@
                             <div class="divider"></div>
                             <h5 class="awards-item-time">December 2014</h5>
                           </div>
-                          <div class="awards-item-aside"> <img src="./Home_files/thumbnail-minimal-1-67x147.png" alt="" width="67" height="147">
+                          <div class="awards-item-aside"> <img src="{{URL::asset('Home_files/thumbnail-minimal-1-67x147.png')}}" alt="" width="67" height="147">
                           </div>
                         </div></div><div class="owl-item cloned" style="width: 369.984px;"><div class="awards-item">
                           <div class="awards-item-main">
@@ -1124,7 +1124,7 @@
                             <div class="divider"></div>
                             <h5 class="awards-item-time">June 2015</h5>
                           </div>
-                          <div class="awards-item-aside"> <img src="./Home_files/thumbnail-minimal-2-68x126.png" alt="" width="68" height="126">
+                          <div class="awards-item-aside"> <img src="{{URL::asset('Home_files/thumbnail-minimal-2-68x126.png')}}" alt="" width="68" height="126">
                           </div>
                         </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
       </div>

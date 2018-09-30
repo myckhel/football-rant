@@ -12,6 +12,9 @@
         @if(Route::currentRouteName() == 'post')
         <li><a href="{{route('news','atletico')}}">News</a></li>
         @endif
+        @if(Route::currentRouteName() == 'group')
+        <li><a href="{{route('groups','atletico')}}">Groups</a></li>
+        @endif
         <li class="active">{{$crumb}}</li>
       </ul>
     </div>

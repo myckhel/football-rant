@@ -22,7 +22,6 @@
             </h5>
           </div>
         </article>
-
         <div class="row row-30">
           <!-- Product - Grid build-->
           @foreach($groups as $group)
@@ -32,22 +31,32 @@
                 <!-- Badge-->
                 <div class="badge badge-red">hot<span class="icon material-icons-whatshot"></span>
                 </div>
-                <div class="product-figure"><img src="./Home_files/product-small-1.png" alt=""></div>
+                <div class="product-figure"><img src="{{URL::asset('Home_files/logo-soccer-default-129x129.png')}}" alt=""></div>
                 <div class="product-buttons">
                   <div class="product-button product-button-share fl-bigmug-line-share27" style="font-size: 22px">
                     <ul class="product-share">
                       <li class="product-share-item"><span>Share</span></li>
-                      <li class="product-share-item"><a class="icon fa fa-facebook" href="shop-elements.html#"></a></li>
-                      <li class="product-share-item"><a class="icon fa fa-instagram" href="shop-elements.html#"></a></li>
-                      <li class="product-share-item"><a class="icon fa fa-twitter" href="shop-elements.html#"></a></li>
-                      <li class="product-share-item"><a class="icon fa fa-google-plus" href="shop-elements.html#"></a></li>
+                      <li class="product-share-item"><a class="icon fa fa-facebook" href="#"></a></li>
+                      <li class="product-share-item"><a class="icon fa fa-instagram" href="#"></a></li>
+                      <li class="product-share-item"><a class="icon fa fa-twitter" href="#"></a></li>
+                      <li class="product-share-item"><a class="icon fa fa-google-plus" href="#"></a></li>
                     </ul>
-                  </div><a class="product-button fl-bigmug-line-shopping202" href="shopping-cart.html" style="font-size: 26px"></a><a class="product-button fl-bigmug-line-zoom60" href="images/shop/product-1-original.jpg" data-lightgallery="item" style="font-size: 25px"></a>
+                  </div>
+                  <a class="product-button fa fa-eye" href="{{route('group', ['atletico', implode('-', explode(' ', $group->name))])}}" style="font-size: 26px"></a>
+                  <a class="product-button fa fa-plus" href="#" style="font-size: 25px"
+                  onclick="event.preventDefault(); joinGroup('{{$group->id}}');">{{App\Member::isMember(\Auth::user()->id, $group->id)}}</a>
+                  <form id="{{$group->id}}" method="POST" style="display: none;" onsubmit="event.preventDefault();">
+                    <input name="club" type="hidden" value="{{$group->club_id}}"/>
+                    <input name="user" type="hidden" value="{{\Auth::user()->id}}"/>
+                    <input name="group" type="hidden" value="{{$group->id}}"/>
+                      @csrf
+                  </form>
                 </div>
               </header>
               <footer class="product-content">
-                <h6 class="product-title"><a href="shop-elements.html#">{{$group->name}}</a></h6>
-                <div class="product-price"><span class="product-price-old">$400</span><span class="heading-6 product-price-new">$290</span>
+                <h6 class="product-title"><a href="#">{{$group->name}}</a></h6>
+                <div class="product-price"><span class="">
+                  <i class="fa fa-users"></i></span><span class="heading-6 ">{{$group->number_members}}</span>
                 </div>
                 <ul class="product-rating">
                   <li><span class="material-icons-star"></span></li>
@@ -80,7 +89,7 @@ $(document).ready(function(){
         // process the form
         $.ajax({
             type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-            url         : "{{route('group.create')}}", // the url where we want to POST
+            url         : "{{route('group.create', 'atletico')}}", // the url where we want to POST
             data        : values, // our data object
             dataType    : 'json', // what type of data do we expect back from the server
             encode      : true
@@ -92,6 +101,7 @@ $(document).ready(function(){
                 console.log(data);
                 alert('Group Created');
                 // here we will handle errors and validation messages
+
               }
               else{alert('error occured');}
             });
@@ -99,5 +109,33 @@ $(document).ready(function(){
         event.preventDefault();
     });
 });
+function joinGroup(id){
+        var confirmed = confirm('confirm to join group');
+        var values = {};
+        $.each($('#'+id).serializeArray(), function(i, field) {
+            values[field.name] = field.value;
+        });
+        // process the form
+        $.ajax({
+            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url         : "{{route('group.join', 'atletico')}}", // the url where we want to POST
+            data        : values, // our data object
+            dataType    : 'json', // what type of data do we expect back from the server
+            encode      : true
+        })
+            // using the done promise callback
+            .done(function(data) {
+              if(data.status){
+                // log data to the console so we can see
+                console.log(data);
+                alert('Group Joined');
+                // here we will handle errors and validation messages
+
+              }
+              else{alert('error occured');}
+            });
+        // stop the form from submitting the normal way and refreshing the page
+        //this.preventDefault();
+}
 </script>
 @endsection

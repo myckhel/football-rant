@@ -25,7 +25,7 @@
         </article>
 
         <!-- Post Future-->
-        <article class="post-future post-future-horizontal"><a class="post-future-figure" href="blog-post.html"><img src="./Home_files/news-3-1-370x325.jpg" alt="" width="370" height="325"></a>
+        <article class="post-future post-future-horizontal"><a class="post-future-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/news-3-1-370x325.jpg')}}" alt="" width="370" height="325"></a>
           <div class="post-future-main">
             <h4 class="post-future-title"><a href="blog-post.html">Zidane: “We’re not going to change the way we play at the Calderón”</a></h4>
             <div class="post-future-meta">
@@ -43,7 +43,7 @@
           </div>
         </article>
         <!-- Post Future-->
-        <article class="post-future post-future-horizontal"><a class="post-future-figure" href="blog-post.html"><img src="./Home_files/news-3-2-370x325.jpg" alt="" width="370" height="325"></a>
+        <article class="post-future post-future-horizontal"><a class="post-future-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/news-3-2-370x325.jpg')}}" alt="" width="370" height="325"></a>
           <div class="post-future-main">
             <h4 class="post-future-title"><a href="blog-post.html">NFL Will Handle Referee Pete Morelli’s Use of Profanity Internally</a></h4>
             <div class="post-future-meta">
@@ -61,7 +61,7 @@
           </div>
         </article>
         <!-- Post Future-->
-        <article class="post-future post-future-horizontal"><a class="post-future-figure" href="blog-post.html"><img src="./Home_files/news-3-3-370x325.jpg" alt="" width="370" height="325"></a>
+        <article class="post-future post-future-horizontal"><a class="post-future-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/news-3-3-370x325.jpg')}}" alt="" width="370" height="325"></a>
           <div class="post-future-main">
             <h4 class="post-future-title"><a href="blog-post.html">Everton and Brighton are battling for the signature of Zohore</a></h4>
             <div class="post-future-meta">
@@ -79,7 +79,7 @@
           </div>
         </article>
         <!-- Post Future-->
-        <article class="post-future post-future-horizontal"><a class="post-future-figure" href="blog-post.html"><img src="./Home_files/news-3-4-370x325.jpg" alt="" width="370" height="325"></a>
+        <article class="post-future post-future-horizontal"><a class="post-future-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/news-3-4-370x325.jpg')}}" alt="" width="370" height="325"></a>
           <div class="post-future-main">
             <h4 class="post-future-title"><a href="blog-post.html">Nothing has changed at Arsenal ten years after their loss</a></h4>
             <div class="post-future-meta">
@@ -97,7 +97,7 @@
           </div>
         </article>
         <!-- Post Future-->
-        <article class="post-future post-future-horizontal"><a class="post-future-figure" href="blog-post.html"><img src="./Home_files/news-3-5-370x325.jpg" alt="" width="370" height="325"></a>
+        <article class="post-future post-future-horizontal"><a class="post-future-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/news-3-5-370x325.jpg')}}" alt="" width="370" height="325"></a>
           <div class="post-future-main">
             <h4 class="post-future-title"><a href="blog-post.html">Coutinho’s camp: It was all Barca’s fault and we can prove it</a></h4>
             <div class="post-future-meta">
@@ -115,7 +115,7 @@
           </div>
         </article>
         <!-- Post Future-->
-        <article class="post-future post-future-horizontal"><a class="post-future-figure" href="blog-post.html"><img src="./Home_files/news-3-6-370x325.jpg" alt="" width="370" height="325"></a>
+        <article class="post-future post-future-horizontal"><a class="post-future-figure" href="blog-post.html"><img src="{{URL::asset('Home_files/news-3-6-370x325.jpg')}}" alt="" width="370" height="325"></a>
           <div class="post-future-main">
             <h4 class="post-future-title"><a href="blog-post.html">Premier League Winners and Losers: a quick look at recent changes</a></h4>
             <div class="post-future-meta">
