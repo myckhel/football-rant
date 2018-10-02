@@ -160,21 +160,123 @@
                     </article>
                   </div>
                 </li>
-                <li>
                 @auth
-                  <a class="link link-icon link-icon-left link-classic" href="{{ route('logout') }}"
+
+                <li>
+                  <div class="cart-inline-toggled-outer">
+                    <!-- Link Cart-->
+                    <button class="link link-cart cart-inline-toggle toggle-original" data-rd-navbar-toggle="#ca">
+                      <span class="link-cart-icon fa fa-bell fa-fw"></span><span class="link-cart-counter">7</span>
+                    </button>
+                    <!-- Cart Inline-->
+                    <article class="cart-inline cart-inline-toggled toggle-original-elements" id="ca">
+                      <div class="cart-inline-inner">
+                        <div class="cart-inline-header">
+                          <p class="cart-inline-subtitle">Notification</p>
+                        </div>
+                        <div class="cart-inline-main">
+                          <!-- Product inline-->
+                          <article class="product-inline">
+                            <div class="product-inline-aside">
+                              <a href="#"><i class="fa fa-comment fa-fw"></i> New Comment</a>
+                            </div>
+                            <div class="product-inline-main">
+                              <span class="pull-right text-muted small">4 minutes ago</span>
+
+                            </div>
+                          </article>
+                          <!-- Product inline-->
+                          <article class="product-inline">
+                            <div class="product-inline-aside">
+                              <a href="#"><i class="fa fa-twitter fa-fw"></i> 3 New Followers</a>
+                            </div>
+                            <div class="product-inline-main">
+                              <span class="pull-right text-muted small">12 minutes ago</span>
+                            </div>
+                          </article>
+                          <!-- Product inline-->
+                          <article class="product-inline">
+                            <div class="product-inline-aside">
+                              <a href="#"><i class="fa fa-envelope fa-fw"></i> Message Sent</a>
+                            </div>
+                            <div class="product-inline-main">
+                              <span class="pull-right text-muted small">4 minutes ago</span>
+                            </div>
+                          </article>
+                          <!-- Product inline-->
+                          <article class="product-inline">
+                            <div class="product-inline-aside">
+                              <a href="#"><i class="fa fa-tasks fa-fw"></i> New Task</a>
+                            </div>
+                            <div class="product-inline-main">
+                              <span class="pull-right text-muted small">4 minutes ago</span>
+                            </div>
+                          </article>
+                          <!-- Product inline-->
+                          <article class="product-inline">
+                            <div class="product-inline-aside">
+                              <a href="#"><i class="fa fa-upload fa-fw"></i> Server Rebooted</a>
+                            </div>
+                            <div class="product-inline-main">
+                              <span class="pull-right text-muted small">4 minutes ago</span>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="cart-inline-footer">
+                          <a class="button button-md button-default-outline" href="#">See All Alerts</a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="cart-inline-toggled-outer">
+                    <!-- Link Cart-->
+                    <button class="link link-cart cart-inline-toggle toggle-original" data-rd-navbar-toggle="#cabx">
+                      <span class="link-cart-icon fa fa-user fa-fw"></span>
+                    </button>
+                    <!-- Cart Inline-->
+                    <article class="cart-inline cart-inline-toggled toggle-original-elements" id="cabx">
+                      <div class="cart-inline-inner">
+                        <div class="cart-inline-header">
+                          <p class="cart-inline-subtitle">Username</p>
+                        </div>
+                        <div class="cart-inline-main">
+                          <!-- Product inline-->
+                          <li>
+                            <a href="#"><i class="fa fa-user fa-fw"></i> User Profile<a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                          </li>
+                        </div>
+                        <div class="cart-inline-footer">
+                          <a class="button button-md button-default-outline" href="#"
+                          onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            <span class="icon fl-bigmug-line-login12"></span><span class="link-icon-text">Logout</span>
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                          @csrf
+                      </form>
+                  </div>
+                </li>
+              <li>
+                  <!--a class="link link-icon link-icon-left link-classic" href="{{ route('logout') }}"
                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     <span class="icon fl-bigmug-line-login12"></span><span class="link-icon-text">Logout</span>
-                  </a>
-                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                      @csrf
-                  </form>
-                  @else
-                  <a class="link link-icon link-icon-left link-classic" href="{{route('auth.sign')}}">
-                    <span class="icon fl-bigmug-line-login12"></span><span class="link-icon-text">Login|Register</span>
-                  </a>
-                  @endauth
+                  </a-->
                 </li>
+                  @else
+                  <li>
+                    <a class="link link-icon link-icon-left link-classic" href="{{route('auth.sign')}}">
+                      <span class="icon fl-bigmug-line-login12"></span><span class="link-icon-text">Login|Register</span>
+                    </a>
+                  </li>
+                  @endauth
               </ul>
             </div>
             <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1 toggle-original" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>

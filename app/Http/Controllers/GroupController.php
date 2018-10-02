@@ -14,8 +14,7 @@ class GroupController extends Controller
       $club = implode(' ', explode('-', $club));
       $groups = Group::selectRaw('groups.name, groups.id, COUNT(members.id) AS number_members, clubs.id AS club_id')
       ->join('members','groups.id','members.groups')->join('clubs','groups.club','clubs.id')
-      ->where('clubs.name', $club)
-      ->groupby('groups.name', 'groups.id', 'clubs.id')->get();
+      ->where('clubs.name', $club)->groupby('groups.name', 'groups.id', 'clubs.id')->get();
       return view('club.groups', compact('groups'));
     }
 

@@ -19,23 +19,24 @@ Route::get('/login-register', function () {
     return view('auth.sign');
 })->name('auth.sign');
 
-Route::get('/{club}/about', function () {
+Route::get('/club/{club}', 'ClubController@index')->name('club');
+
+Route::get('/club/{club}/about', function () {
     return view('club.about');
 })->name('about');
 
-Route::get('/{club}/news', function () {
+Route::get('/club/{club}/news', function () {
     return view('club.news');
 })->name('news');
 
-Route::get('/{club}/post', function () {
+Route::get('/club/{club}/post', function () {
     return view('club.post');
 })->name('post');
 
-Route::get('/{club}/groups', 'GroupController@index')->name('groups');
-Route::post('/{club}/group/create', 'GroupController@create')->name('group.create');
-Route::post('/{club}/group/join', 'GroupController@join')->name('group.join');
-Route::get('/{club}/group/{groups}', 'GroupController@view')->name('group');
+Route::get('/club/{club}/groups', 'GroupController@index')->name('groups');
+Route::post('/club/{club}/group/create', 'GroupController@create')->name('group.create');
+Route::post('/club/{club}/group/join', 'GroupController@join')->name('group.join');
+Route::get('/club/{club}/group/{groups}', 'GroupController@view')->name('group');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/{club}', 'ClubController@index')->name('club');

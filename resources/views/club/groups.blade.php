@@ -42,8 +42,8 @@
                       <li class="product-share-item"><a class="icon fa fa-google-plus" href="#"></a></li>
                     </ul>
                   </div>
-                  <a class="product-button fa fa-eye" href="{{route('group', ['atletico', implode('-', explode(' ', $group->name))])}}" style="font-size: 26px"></a>
-                  <a class="product-button fa fa-plus" href="#" style="font-size: 25px"
+                  <a class="product-button fa fa-eye" data-placement="right" title="View Group" href="{{route('group', ['atletico', implode('-', explode(' ', $group->name))])}}" style="font-size: 26px"></a>
+                  <a class="product-button fa fa-plus" data-placement="right" title="Join Group" href="#" style="font-size: 25px"
                   onclick="event.preventDefault(); joinGroup('{{$group->id}}');">{{App\Member::isMember(\Auth::user()->id, $group->id)}}</a>
                   <form id="{{$group->id}}" method="POST" style="display: none;" onsubmit="event.preventDefault();">
                     <input name="club" type="hidden" value="{{$group->club_id}}"/>
@@ -54,7 +54,7 @@
                 </div>
               </header>
               <footer class="product-content">
-                <h6 class="product-title"><a href="#">{{$group->name}}</a></h6>
+                <h6 class="product-title"><a href="{{route('group', ['atletico', implode('-', explode(' ', $group->name))])}}">{{$group->name}}</a></h6>
                 <div class="product-price"><span class="">
                   <i class="fa fa-users"></i></span><span class="heading-6 ">{{$group->number_members}}</span>
                 </div>
