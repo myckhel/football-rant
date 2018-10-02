@@ -324,7 +324,7 @@
                     <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{route('post','atletico')}}">Single</a></li>
                   </ul>
                 </li>
-                <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-nav-link" href="shop.html"><i class="fa fa-shopping-cart" ></i> Shop</a><span class="rd-navbar-submenu-toggle"></span>
+                <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-nav-link" href="{{route('shop', 'atletico')}}"><i class="fa fa-shopping-cart" ></i> Shop</a><span class="rd-navbar-submenu-toggle"></span>
                   <!-- RD Navbar Dropdown-->
                   <ul class="rd-menu rd-navbar-dropdown">
                     <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="shop-elements.html">Shop Elements</a></li>

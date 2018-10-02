@@ -42,9 +42,10 @@
                       <li class="product-share-item"><a class="icon fa fa-google-plus" href="#"></a></li>
                     </ul>
                   </div>
+                  <?php $member = App\Member::isMember(\Auth::user()->id, $group->id); ?>
                   <a class="product-button fa fa-eye" data-placement="right" title="View Group" href="{{route('group', ['atletico', implode('-', explode(' ', $group->name))])}}" style="font-size: 26px"></a>
-                  <a class="product-button fa fa-plus" data-placement="right" title="Join Group" href="#" style="font-size: 25px"
-                  onclick="event.preventDefault(); joinGroup('{{$group->id}}');">{{App\Member::isMember(\Auth::user()->id, $group->id)}}</a>
+                  <a id="join_btn{{$group->id}}" class="product-button fa fa-{{$member ? 'remove' : 'plus'}}" data-placement="right" title="{{$member ? 'Leave Group' : 'Join Group'}}" href="#" style="font-size: 25px"
+                  onclick="event.preventDefault(); {{$member ? 'leaveGroup('.$group->id.')' : ' joinGroup('.$group->id.')'}};"></a>
                   <form id="{{$group->id}}" method="POST" style="display: none;" onsubmit="event.preventDefault();">
                     <input name="club" type="hidden" value="{{$group->club_id}}"/>
                     <input name="user" type="hidden" value="{{\Auth::user()->id}}"/>
@@ -80,62 +81,99 @@
 @section('js')
 <script>
 $(document).ready(function(){
-  $('#create_group_form').submit(function(event) {
-        var confirmed = confirm('confirm to create group');
-        var values = {};
-        $.each($('#create_group_form').serializeArray(), function(i, field) {
-            values[field.name] = field.value;
-        });
-        // process the form
-        $.ajax({
-            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-            url         : "{{route('group.create', 'atletico')}}", // the url where we want to POST
-            data        : values, // our data object
-            dataType    : 'json', // what type of data do we expect back from the server
-            encode      : true
-        })
-            // using the done promise callback
-            .done(function(data) {
-              if(data.status){
-                // log data to the console so we can see
-                console.log(data);
-                alert('Group Created');
-                // here we will handle errors and validation messages
 
-              }
-              else{alert('error occured');}
-            });
-        // stop the form from submitting the normal way and refreshing the page
-        event.preventDefault();
+    $("#join_btn").prop('disabled',true);
+    $('#create_group_form').submit(function(event) {
+    var confirmed = confirm('confirm to create group');
+    var values = {};
+    $.each($('#create_group_form').serializeArray(), function(i, field) {
+        values[field.name] = field.value;
     });
+    // process the form
+    $.ajax({
+        type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+        url         : "{{route('group.create', 'atletico')}}", // the url where we want to POST
+        data        : values, // our data object
+        dataType    : 'json', // what type of data do we expect back from the server
+        encode      : true
+    })
+        // using the done promise callback
+        .done(function(data) {
+          if(data.status){
+            // log data to the console so we can see
+            console.log(data);
+            alert('Group Created');
+            // here we will handle errors and validation messages
+
+          }
+          else{alert('error occured');}
+        });
+    // stop the form from submitting the normal way and refreshing the page
+    event.preventDefault();
+  });
 });
 function joinGroup(id){
-        var confirmed = confirm('confirm to join group');
-        var values = {};
-        $.each($('#'+id).serializeArray(), function(i, field) {
-            values[field.name] = field.value;
-        });
-        // process the form
-        $.ajax({
-            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-            url         : "{{route('group.join', 'atletico')}}", // the url where we want to POST
-            data        : values, // our data object
-            dataType    : 'json', // what type of data do we expect back from the server
-            encode      : true
-        })
-            // using the done promise callback
-            .done(function(data) {
-              if(data.status){
-                // log data to the console so we can see
-                console.log(data);
-                alert('Group Joined');
-                // here we will handle errors and validation messages
 
-              }
-              else{alert('error occured');}
-            });
-        // stop the form from submitting the normal way and refreshing the page
-        //this.preventDefault();
+  var confirmed = confirm('Are you sure you want to join the group?');
+  var values = {};
+  if(confirmed){
+      $.each($('#'+id).serializeArray(), function(i, field) {
+      values[field.name] = field.value;
+    });
+    // process the form
+    $.ajax({
+        type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+        url         : "{{route('group.join', 'atletico')}}", // the url where we want to POST
+        data        : values, // our data object
+        dataType    : 'json', // what type of data do we expect back from the server
+        encode      : true
+    })
+    // using the done promise callback
+    .done(function(data) {
+      if(data.status){
+        // log data to the console so we can see
+        console.log(data);
+        alert('Group Joined');
+        // here we will handle errors and validation messages
+        window.location.reload();
+      }
+      else if (!data.status) {
+        alert(data.reason);
+      }
+      else{alert('error occured');}
+    });
+  }
+}
+function leaveGroup(id){
+
+  var confirmed = confirm('Are you sure you want to leave the group?');
+  var values = {};
+  if(confirmed){
+      $.each($('#'+id).serializeArray(), function(i, field) {
+      values[field.name] = field.value;
+    });
+    // process the form
+    $.ajax({
+        type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+        url         : "{{route('group.leave', 'atletico')}}", // the url where we want to POST
+        data        : values, // our data object
+        dataType    : 'json', // what type of data do we expect back from the server
+        encode      : true
+    })
+    // using the done promise callback
+    .done(function(data) {
+      if(data.status){
+        // log data to the console so we can see
+        console.log(data);
+        alert('Group left');
+        window.location.reload();
+      }
+      else if (!data.status) {
+        alert(data.reason);
+      }
+      else{alert('error occured');}
+    });
+  }
 }
 </script>
 @endsection

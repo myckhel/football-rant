@@ -20,16 +20,25 @@ class GroupController extends Controller
 
     public function join(Request $request){
       $group = $request->group;      $user = $request->user;      $club = $request->club;
+      //check if joined already
+      if($member = Member::where('groups',$group)->where('club',$club)->where('user',$user)->first()){
+        return response()->json(['status' => false, 'reason' => 'Already a member of this group']);
+      }
       Member::create(['groups' => $group, 'user' => $user, 'club' => $club,]);
-      $id = Group::where('id',$group)->where('club',$club)->first()->id;
-      return response()->json(['status' => true, 'id' => $id]);
+      $name = implode('-', explode(' ', Group::where('id',$group)->where('club',$club)->first()->name));
+      return response()->json(['status' => true, 'name' => $name]);
     }
 
     public function leave(Request $request){
       $group = $request->group;      $user = $request->user;      $club = $request->club;
-      Member::create(['groups' => $group, 'user' => $user, 'club' => $club,]);
-      $id = Group::where('id',$group)->where('club',$club)->first()->id;
-      return response()->json(['status' => true, 'id' => $id]);
+      //check if left already
+      $member = 0;
+      if(!($member = Group::where('id',$group)->where('club',$club)->first())){
+        return response()->json(['status' => false, 'reason' => 'You have already left this group']);
+      }
+      Member::destroy($member->id);
+      $name = Group::where('id',$group)->where('club',$club)->first()->name;
+      return response()->json(['status' => true, 'name' => $name]);
     }
 
     public function create(Request $request){
