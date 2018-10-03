@@ -9,15 +9,22 @@ use Illuminate\Http\Request;
 class ClubController extends Controller
 {
     //
+    //private $current;
     public function index($club){
-      $club = Club::where('name', $club)->first();
-      return view('club.index', compact('club'));
+      if($club = Club::where('name', Club::toName($club))->first()){
+        //this->$current = Club::toLink($club->name);
+        return view('club.index', compact('club'));
+      }else{
+        $message = 'Ooops! Club or Page Not Found';
+        return view('club.404', compact('message'));
+      }
     }
 
     public function teams(){
-      $teams = Club::selectRaw('clubs.id, clubs.name, (SELECT COUNT(fans.id) From fans) AS number_fans, COUNT(groups.id) AS number_groups')
-      ->leftjoin('fans', 'fans.club', 'clubs.id')->leftjoin('groups', 'groups.club', 'clubs.id')
-      ->groupby('clubs.id', 'clubs.name')->get();
+      $teams = Club::selectRaw('clubs.id, clubs.name, clubs.badge, (SELECT COUNT(fans.id) From fans where fans.club = clubs.id) AS number_fans,
+      (SELECT COUNT(groups.id) From groups where groups.club = clubs.id) AS number_groups')
+      //->leftjoin('fans', 'fans.club', 'clubs.id')->leftjoin('groups', 'groups.club', 'clubs.id')
+      ->groupby('clubs.id', 'clubs.name', 'clubs.badge')->get();
       return view('teams', compact('teams'));
     }
 
@@ -28,7 +35,7 @@ class ClubController extends Controller
         return response()->json(['status' => false, 'reason' => 'Already a fan of this team']);
       }
       Fan::create(['user' => $user, 'club' => $club,]);
-      $name = implode('-', explode(' ', Club::where('id',$club)->first()->name));
+      $name = Club::toLink(Club::where('id',$club)->first()->name);
       return response()->json(['status' => true, 'name' => $name]);
     }
 

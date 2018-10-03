@@ -49,7 +49,7 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|string|max:255',
+            'name' => 'required|string|max:255|unique:users',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
         ]);
@@ -68,5 +68,19 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+    }
+
+    protected function extra($data, $user)
+    {
+      $data->user = $user->id;
+      if($data->action == 'joinClub'){
+        $data->club = $data->key;
+        return app('App\Http\Controllers\ClubController')->join($data);
+      }elseif($data->option == 'joinGroup'){
+        $data->club = $data->club;
+        $data->group = $data->key;
+        app('App\Http\Controllers\ClubController')->join($data);
+        return app('App\Http\Controllers\GroupController')->join($data);
+      }
     }
 }

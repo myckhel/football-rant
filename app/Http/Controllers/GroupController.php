@@ -6,12 +6,13 @@ use Illuminate\Http\Request;
 use App\Group;
 use App\Member;
 use DB;
+use App\Club;
 
 class GroupController extends Controller
 {
     //
     public function index($club){
-      $club = implode(' ', explode('-', $club));
+      $club = Club::toName($club);
       $groups = Group::selectRaw('groups.name, groups.id, COUNT(members.id) AS number_members, clubs.id AS club_id')
       ->join('members','groups.id','members.groups')->join('clubs','groups.club','clubs.id')
       ->where('clubs.name', $club)->groupby('groups.name', 'groups.id', 'clubs.id')->get();
@@ -25,7 +26,7 @@ class GroupController extends Controller
         return response()->json(['status' => false, 'reason' => 'Already a member of this group']);
       }
       Member::create(['groups' => $group, 'user' => $user, 'club' => $club,]);
-      $name = implode('-', explode(' ', Group::where('id',$group)->where('club',$club)->first()->name));
+      $name = Club::toLink(Group::where('id',$group)->where('club',$club)->first()->name);
       return response()->json(['status' => true, 'name' => $name]);
     }
 
@@ -53,8 +54,8 @@ class GroupController extends Controller
     }
 
     public function view($club,$group){
-      $group = implode(' ', explode('-', $group));
-      $club = implode(' ', explode('-', $club));
+      $group = Club::toName($group);
+      $club = Club::toName($club);
       //group
       $group = Group::selectRaw('groups.name, groups.id, groups.creator, groups.club, clubs.name AS club, users.name AS creator, COUNT(members.id) AS number_members')
       ->join('users','groups.creator','users.id')->join('members','groups.id','members.groups')

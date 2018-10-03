@@ -14,6 +14,7 @@
       <!--Block Categories-->
       <div class="block-categories">
         <!-- group creation -->
+        @if(!$guest)
         <form id="create_group_form" class="rd-form rd-inline-form-creative" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="" >
           <div class="form-wrap">
             <div class="form-input-wrap">
@@ -27,6 +28,9 @@
           </div>
           @csrf
         </form>
+        @else
+        <a href="{{route('register')}}">Register/Login To Create a Group</a>
+        @endif
       </div>
     </div>
   </div>

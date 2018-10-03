@@ -24,6 +24,13 @@
         </article>
         <div class="row row-30">
           <!-- Product - Grid build-->
+          <?php
+          $member= false;
+          $guest = true;
+          if(!($guest = !(\Auth::user()))){
+            $member = App\Member::isMember(\Auth::user()->id);
+          }
+          ?>
           @foreach($groups as $group)
           <div class="col-md-6 col-lg-6">
             <article class="product">
@@ -42,16 +49,20 @@
                       <li class="product-share-item"><a class="icon fa fa-google-plus" href="#"></a></li>
                     </ul>
                   </div>
-                  <?php $member = App\Member::isMember(\Auth::user()->id, $group->id); ?>
                   <a class="product-button fa fa-eye" data-placement="right" title="View Group" href="{{route('group', ['atletico', implode('-', explode(' ', $group->name))])}}" style="font-size: 26px"></a>
-                  <a id="join_btn{{$group->id}}" class="product-button fa fa-{{$member ? 'remove' : 'plus'}}" data-placement="right" title="{{$member ? 'Leave Group' : 'Join Group'}}" href="#" style="font-size: 25px"
-                  onclick="event.preventDefault(); {{$member ? 'leaveGroup('.$group->id.')' : ' joinGroup('.$group->id.')'}};"></a>
+                  <a id="join_btn{{$group->id}}" class="product-button fa fa-{{$member ? 'remove' : 'plus'}}" data-placement="right" title="{{$member ? 'Leave Group' : 'Join Group'}}" href="{{$guest ? route('auth.sign',['action' => 'joinGroup', 'key' => $group->id, 'club' => $group->club_id]) : '#'}}" style="font-size: 25px"
+                  @if(!$guest)
+                  onclick="event.preventDefault(); {{$member ? 'leaveGroup('.$group->id.')' : ' joinGroup('.$group->id.')'}};"
+                  @endif
+                  ></a>
+                  @if(!$guest)
                   <form id="{{$group->id}}" method="POST" style="display: none;" onsubmit="event.preventDefault();">
                     <input name="club" type="hidden" value="{{$group->club_id}}"/>
                     <input name="user" type="hidden" value="{{\Auth::user()->id}}"/>
                     <input name="group" type="hidden" value="{{$group->id}}"/>
                       @csrf
                   </form>
+                  @endif
                 </div>
               </header>
               <footer class="product-content">

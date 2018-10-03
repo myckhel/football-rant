@@ -60,6 +60,14 @@
                 </article>
               </div>
               <div class="tab-pane fade" id="members">
+              <?php
+              $member= false;
+              $guest = true;
+              if(!($guest = !(\Auth::user()))){
+                $member = App\Member::isMember(\Auth::user()->id);
+              }
+              ?>
+              @if(!$guest)
                 @foreach($members as $member)
                 <!-- Post Classic-->
                 <article class="post-classic">
@@ -77,9 +85,13 @@
                   </div>
                 </article>
                 @endforeach
+                @else
+                <a href="{{route('register')}}">Register/Login To View Group Members</a>
+                @endif
               </div>
               <div class="tab-pane fade" id="discussion">
                 <!-- Post Classic-->
+                @if(!$guest)
                 <article class="post-classic">
                   <div class="post-classic-aside">
                     <div class="chat-panel panel panel-default">
@@ -201,6 +213,9 @@
                     <!-- /.panel .chat-panel -->
                   </div>
                 </article>
+                @else
+                <a href="{{route('register')}}">Register/Login To View Group Discussion</a>
+                @endif
               </div>
             </div>
           </div>

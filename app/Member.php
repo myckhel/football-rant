@@ -11,9 +11,13 @@ class Member extends Model
         'groups', 'user', 'club',
     ];
 
-    public static function isMember($id, $group){
-      if(Member::where('user', $id)->where('groups', $group)->first()){
-        return true;
-      }else{return false;}
+    public static function isMember($id, $group = false){
+      if($group){
+        if(Member::where('user', $id)->where('groups', $group)->first()){
+          return true;
+        }else{return false;}
+      }else{
+        return Member::where('user', $id)->where('groups', $group)->first();
+      }
     }
 }
