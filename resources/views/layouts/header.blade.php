@@ -1,23 +1,23 @@
 <?php //validate the page
-$current = App\Club::getDefaultClub();
-$currentName = $current->name;
-$currentLink =  App\Club::toLink($currentName);
+$GLOBALS['current'] = App\Club::getDefaultClub();
+$GLOBALS['currentName'] = $GLOBALS['current']->name;
+$GLOBALS['currentLink'] =  App\Club::toLink($GLOBALS['currentName']);
 if(Route::current()->parameters()){
   if(isset($crumb)){
     if($crumb == '404'){
-      $current = $current;
+      $GLOBALS['current'] = $GLOBALS['current'];
     }else{
-      $current = App\Club::findByName(Route::current()->parameters()['club']);
-      $currentName = $current->name;    $currentLink =  App\Club::toLink($currentName);
+      $GLOBALS['current'] = App\Club::findByName(Route::current()->parameters()['club']);
+      $GLOBALS['currentName'] = $GLOBALS['current']->name;    $GLOBALS['currentLink'] =  App\Club::toLink($GLOBALS['currentName']);
     }
   }else{
-    $current = App\Club::findByName(Route::current()->parameters()['club']);
-    $currentName = $current->name;    $currentLink =  App\Club::toLink($currentName);
+    $GLOBALS['current'] = App\Club::findByName(Route::current()->parameters()['club']);
+    $GLOBALS['currentName'] = $GLOBALS['current']->name;    $GLOBALS['currentLink'] =  App\Club::toLink($GLOBALS['currentName']);
   }
 }
 elseif($u = \Auth::user()){
   if(App\Fan::isFan($u->id)){
-    $current = App\Fan::isFan($u->id);    $currentName = $current->name;    $currentLink =  App\Club::toLink($currentName);
+    $GLOBALS['current'] = App\Fan::isFan($u->id);    $GLOBALS['currentName'] = $GLOBALS['current']->name;    $GLOBALS['currentLink'] =  App\Club::toLink($GLOBALS['currentName']);
   }
 }
 ?>
@@ -309,7 +309,7 @@ elseif($u = \Auth::user()){
           <div class="rd-navbar-main-top">
             <div class="rd-navbar-main-container container">
               <!-- RD Navbar Brand-->
-              <div class="rd-navbar-brand"><a class="brand link-circle" href="{{route('club', $currentLink)}}"><img class="brand-logo " src="{{URL::asset('images/team/logo/'.$current->badge)}}" alt="" width="129" height="129"></a>
+              <div class="rd-navbar-brand"><a class="brand link-circle" href="{{route('club', $GLOBALS['currentLink'])}}"><img class="brand-logo " src="{{URL::asset('images/team/logo/'.$GLOBALS['current']->badge)}}" alt="" width="129" height="129"></a>
               </div>
               <!-- RD Navbar List-->
               <ul class="rd-navbar-list">
@@ -335,19 +335,19 @@ elseif($u = \Auth::user()){
             <div class="rd-navbar-main-container container">
               <!-- RD Navbar Nav-->
               <ul class="rd-navbar-nav">
-                <li class="rd-nav-item active"><a class="rd-nav-link" href="{{route('club',$currentLink)}}"><i class="fa fa-home" ></i> Home</a>
+                <li class="rd-nav-item active"><a class="rd-nav-link" href="{{route('club',$GLOBALS['currentLink'])}}"><i class="fa fa-home" ></i> Home</a>
                 </li>
-                <li class="rd-nav-item"><a class="rd-nav-link" href="{{route('about',$currentLink)}}"><i class="fa fa-info" ></i> About Us</a>
+                <li class="rd-nav-item"><a class="rd-nav-link" href="{{route('about',$GLOBALS['currentLink'])}}"><i class="fa fa-info" ></i> About Us</a>
                 </li>
                 <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-nav-link" href="#"><i class="fa fa-book" ></i> Read</a><span class="rd-navbar-submenu-toggle"></span>
                   <!-- RD Navbar Dropdown-->
                   <ul class="rd-menu rd-navbar-dropdown">
-                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{route('news',$currentLink)}}">News</a></li>
+                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{route('news',$GLOBALS['currentLink'])}}">News</a></li>
                     <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Posts Feed</a></li>
-                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{route('post',$currentLink)}}">Single</a></li>
+                    <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{route('post',$GLOBALS['currentLink'])}}">Single</a></li>
                   </ul>
                 </li>
-                <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-nav-link" href="{{route('shop', $currentLink)}}"><i class="fa fa-shopping-cart" ></i> Shop</a><span class="rd-navbar-submenu-toggle"></span>
+                <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a class="rd-nav-link" href="{{route('shop', $GLOBALS['currentLink'])}}"><i class="fa fa-shopping-cart" ></i> Shop</a><span class="rd-navbar-submenu-toggle"></span>
                   <!-- RD Navbar Dropdown-->
                   <ul class="rd-menu rd-navbar-dropdown">
                     <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="shop-elements.html">Shop Elements</a></li>
@@ -355,7 +355,7 @@ elseif($u = \Auth::user()){
                     <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="checkout.html">Checkout</a></li>
                   </ul>
                 </li>
-                <li class="rd-nav-item"><a class="rd-nav-link" href="{{route('groups',$currentLink)}}"><i class="fa fa-users" ></i> Groups</a>
+                <li class="rd-nav-item"><a class="rd-nav-link" href="{{route('groups',$GLOBALS['currentLink'])}}"><i class="fa fa-users" ></i> Groups</a>
                 </li>
                 <li class="rd-nav-item"><a class="rd-nav-link" href="contact-us.html"><i class="fa fa-phone" ></i> Contact Us</a>
                 </li>

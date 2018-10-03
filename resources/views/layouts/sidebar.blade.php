@@ -1,4 +1,27 @@
 @if(Route::currentRouteName() == "groups")
+<?php //validate the page
+$current = App\Club::getDefaultClub();
+$currentName = $current->name;
+$currentLink =  App\Club::toLink($currentName);
+if(Route::current()->parameters()){
+  if(isset($crumb)){
+    if($crumb == '404'){
+      $current = $current;
+    }else{
+      $current = App\Club::findByName(Route::current()->parameters()['club']);
+      $currentName = $current->name;    $currentLink =  App\Club::toLink($currentName);
+    }
+  }else{
+    $current = App\Club::findByName(Route::current()->parameters()['club']);
+    $currentName = $current->name;    $currentLink =  App\Club::toLink($currentName);
+  }
+}
+elseif($u = \Auth::user()){
+  if(App\Fan::isFan($u->id)){
+    $current = App\Fan::isFan($u->id);    $currentName = $current->name;    $currentLink =  App\Club::toLink($currentName);
+  }
+}
+?>
 <div class="col-lg-4">
   <!-- Blog Aside-->
   <div class="block-aside">
@@ -20,7 +43,7 @@
             <div class="form-input-wrap">
               <input class="form-input form-control-has-validation" id="footer-form-email" type="text" name="name" placeholder="Name" required>
               <input type="hidden" name="user" value="{{auth::user()->id}}">
-              <input type="hidden" name="club" value="1">
+              <input type="hidden" name="club" value="{{$current->id}}">
             </div>
           </div>
           <div class="form-button">

@@ -38,7 +38,7 @@
                 <!-- Badge-->
                 <div class="badge badge-red">hot<span class="icon material-icons-whatshot"></span>
                 </div>
-                <div class="product-figure"><img src="{{URL::asset('Home_files/logo-soccer-default-129x129.png')}}" alt=""></div>
+                <div class="product-figure"><img src="{{URL::asset('images/team/logo/'.$GLOBALS['current']->badge)}}" alt=""></div>
                 <div class="product-buttons">
                   <div class="product-button product-button-share fl-bigmug-line-share27" style="font-size: 22px">
                     <ul class="product-share">
@@ -49,7 +49,7 @@
                       <li class="product-share-item"><a class="icon fa fa-google-plus" href="#"></a></li>
                     </ul>
                   </div>
-                  <a class="product-button fa fa-eye" data-placement="right" title="View Group" href="{{route('group', ['atletico', implode('-', explode(' ', $group->name))])}}" style="font-size: 26px"></a>
+                  <a class="product-button fa fa-eye" data-placement="right" title="View Group" href="{{route('group', [App\Club::toLink($GLOBALS['currentName']), App\Club::toLink($group->name)])}}" style="font-size: 26px"></a>
                   <a id="join_btn{{$group->id}}" class="product-button fa fa-{{$member ? 'remove' : 'plus'}}" data-placement="right" title="{{$member ? 'Leave Group' : 'Join Group'}}" href="{{$guest ? route('auth.sign',['action' => 'joinGroup', 'key' => $group->id, 'club' => $group->club_id]) : '#'}}" style="font-size: 25px"
                   @if(!$guest)
                   onclick="event.preventDefault(); {{$member ? 'leaveGroup('.$group->id.')' : ' joinGroup('.$group->id.')'}};"
@@ -92,39 +92,38 @@
 @section('js')
 <script>
 $(document).ready(function(){
-
-    $("#join_btn").prop('disabled',true);
     $('#create_group_form').submit(function(event) {
     var confirmed = confirm('confirm to create group');
     var values = {};
-    $.each($('#create_group_form').serializeArray(), function(i, field) {
-        values[field.name] = field.value;
-    });
-    // process the form
-    $.ajax({
-        type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-        url         : "{{route('group.create', 'atletico')}}", // the url where we want to POST
-        data        : values, // our data object
-        dataType    : 'json', // what type of data do we expect back from the server
-        encode      : true
-    })
-        // using the done promise callback
-        .done(function(data) {
-          if(data.status){
-            // log data to the console so we can see
-            console.log(data);
-            alert('Group Created');
-            // here we will handle errors and validation messages
-
-          }
-          else{alert('error occured');}
-        });
-    // stop the form from submitting the normal way and refreshing the page
-    event.preventDefault();
+    if(confirmed){
+      $.each($('#create_group_form').serializeArray(), function(i, field) {
+          values[field.name] = field.value;
+      });
+      // process the form
+      $.ajax({
+          type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+          url         : "{{route('group.create', 'atletico')}}", // the url where we want to POST
+          data        : values, // our data object
+          dataType    : 'json', // what type of data do we expect back from the server
+          encode      : true
+      })
+          // using the done promise callback
+          .done(function(data) {
+            if(data.status){
+              // log data to the console so we can see
+              console.log(data);
+              alert('Group Created');
+              // here we will handle errors and validation messages
+              window.location.reload();
+            }
+            else{alert('error occured');}
+          });
+      // stop the form from submitting the normal way and refreshing the page
+      event.preventDefault();
+    }
   });
 });
 function joinGroup(id){
-
   var confirmed = confirm('Are you sure you want to join the group?');
   var values = {};
   if(confirmed){

@@ -39,7 +39,7 @@ Route::get('/{club}/groups', 'GroupController@index')->name('groups');
 Route::post('/{club}/group/create', 'GroupController@create')->name('group.create');
 Route::post('/{club}/group/join', 'GroupController@join')->name('group.join');
 Route::post('/{club}/group/leave', 'GroupController@leave')->name('group.leave');
-Route::get('/{club}/group/{groups}', 'GroupController@view')->name('group');
+
 
 Route::get('/teams', 'ClubController@teams')->name('teams');
 Route::post('/{club}/join', 'ClubController@join')->name('team.join');
@@ -48,4 +48,5 @@ Route::post('/{club}/leave', 'ClubController@leave')->name('team.leave');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/{club}/{groups}', 'GroupController@view')->name('group');
 Route::get('/{club}', 'ClubController@index')->name('club');

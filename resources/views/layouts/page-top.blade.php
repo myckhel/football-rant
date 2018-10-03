@@ -8,12 +8,12 @@
     <div class="container">
       <h3 class="breadcrumbs-custom-title">{{$crumb}}</h3>
       <ul class="breadcrumbs-custom-path">
-        <li><a href="{{route('club','atletico')}}">Home</a></li>
+        <li><a href="{{route('club',$GLOBALS['currentLink'])}}">Home</a></li>
         @if(Route::currentRouteName() == 'post')
         <li><a href="{{route('news','atletico')}}">News</a></li>
         @endif
         @if(Route::currentRouteName() == 'group')
-        <li><a href="{{route('groups','atletico')}}">Groups</a></li>
+        <li><a href="{{route('groups',$GLOBALS['currentLink'])}}">Groups</a></li>
         @endif
         <li class="active">{{$crumb}}</li>
       </ul>
