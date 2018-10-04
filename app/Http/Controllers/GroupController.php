@@ -64,6 +64,13 @@ class GroupController extends Controller
       //group members
       $members = Member::selectRaw('users.name')->join('users','members.user','users.id')
       ->where('members.groups',$group->id)->get();
+      if($user = \Auth::user()){
+        //joined groups
+        $jgroups = Group::selectRaw('groups.name, clubs.badge')
+        ->join('members', 'members.groups', 'groups.id')->join('clubs', 'clubs.id', 'groups.club')
+        ->where('members.user', $user->id)->get();
+        return view('club.group', compact('group', 'members', 'jgroups'));
+      }
       return view('club.group', compact('group', 'members'));
     }
 }
