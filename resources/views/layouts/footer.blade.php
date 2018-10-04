@@ -18,7 +18,7 @@
       <div class="row row-50">
         <div class="col-lg-5 text-center text-sm-left">
           <article class="unit unit-sm-horizontal unit-middle justify-content-center justify-content-sm-start footer-classic-info">
-            <div class="unit-left"><a class="brand brand-md link-circle" href=""><img class="brand-logo " src="{{URL::asset('Home_files/logo-soccer-default-129x129.png')}}" alt="" width="129" height="129"></a>
+            <div class="unit-left"><a class="brand brand-md link-circle" href=""><img class="brand-logo " src="{{URL::asset('images/team/logo/'.$GLOBALS['current']->badge)}}" alt="" width="129" height="129"></a>
             </div>
             <div class="unit-body">
               <p>Atletico website offers you the latest news about our team as well as updates on our matches and other events.</p>
