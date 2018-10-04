@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ClubController@teams');
 
 Route::get('/login-register', function () {
     return view('auth.sign');
