@@ -16,8 +16,8 @@ if(Route::current()->parameters()){
   }
 }
 elseif($u = \Auth::user()){
-  if(App\Fan::isFan($u->id)){
-    $GLOBALS['current'] = App\Fan::isFan($u->id);    $GLOBALS['currentName'] = $GLOBALS['current']->name;    $GLOBALS['currentLink'] =  App\Club::toLink($GLOBALS['currentName']);
+  if(App\Fan::isFan()){
+    $GLOBALS['current'] = App\Fan::isFan();    $GLOBALS['currentName'] = $GLOBALS['current']->name;    $GLOBALS['currentLink'] =  App\Club::toLink($GLOBALS['currentName']);
   }
 }
 ?>
@@ -263,7 +263,7 @@ elseif($u = \Auth::user()){
                     <article class="cart-inline cart-inline-toggled toggle-original-elements" id="cabx">
                       <div class="cart-inline-inner">
                         <div class="cart-inline-header">
-                          <p class="cart-inline-subtitle">Username</p>
+                          <p class="cart-inline-subtitle">{{\Auth::user()->name}}</p>
                         </div>
                         <div class="cart-inline-main">
                           <!-- Product inline-->

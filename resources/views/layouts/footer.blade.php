@@ -142,7 +142,7 @@
         <p class="rights"><span>Atletico FC</span><span>&nbsp;©&nbsp;</span><span class="copyright-year">2018</span><span>.&nbsp;</span><a class="link-underline" href="privacy-policy.html">Privacy Policy</a></p>
         <nav class="nav-minimal">
           <ul class="nav-minimal-list">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="{{route('home')}}">Home</a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Statistics</a></li>
             <li><a href="#">Team</a></li>
@@ -181,19 +181,12 @@
 <script src="{{URL::asset('js/script.js')}}"></script>
 	<!--BootstrapJS [ RECOMMENDED ]-->
 	<script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+	@if(Route::currentRouteName() == "group")
+	<!--script data-main="{{ URL::asset('resources/assets/js/app.js')}}" src="{{ URL::asset('resources/assets/js/require.js') }}"></script-->
+	<script src="{{ URL::asset('public/bundle.js') }}"></script>
+	<!--script type="module" src="{{ URL::asset('resources/assets/js/bootstrap.js') }}"></script-->
+	@endif
 <!-- coded by houdini-->
-
-<!--LIVEDEMO_00 -->
-
-<script type="text/javascript">
-//  var _gaq = _gaq || [];
-//   _gaq.push(['_setAccount', 'UA-7078796-5']);
-//   _gaq.push(['_trackPageview']);
-//   (function() {
-// 	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
-// 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-// })();</script>
 
 <span role="status" aria-live="polite" class="select2-hidden-accessible"></span>
 <a href="#" id="ui-to-top" class="ui-to-top fa fa-angle-up">

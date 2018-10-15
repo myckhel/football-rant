@@ -50,9 +50,9 @@
                     </ul>
                   </div>
                   <a class="product-button fa fa-eye" data-placement="right" title="View Group" href="{{route('group', [App\Club::toLink($GLOBALS['currentName']), App\Club::toLink($group->name)])}}" style="font-size: 26px"></a>
-                  <a id="join_btn{{$group->id}}" class="product-button fa fa-{{$member ? 'remove' : 'plus'}}" data-placement="right" title="{{$member ? 'Leave Group' : 'Join Group'}}" href="{{$guest ? route('auth.sign',['action' => 'joinGroup', 'key' => $group->id, 'club' => $group->club_id]) : '#'}}" style="font-size: 25px"
+                  <a id="join_btn{{$group->id}}" class="product-button fa fa-{{(App\Member::isMember(\Auth::user()->id, $group->id)) ? 'remove' : 'plus'}}" data-placement="right" title="{{(App\Member::isMember(\Auth::user()->id, $group->id)) ? 'Leave Group' : 'Join Group'}}" href="{{$guest ? route('auth.sign',['action' => 'joinGroup', 'key' => $group->id, 'club' => $group->club_id]) : '#'}}" style="font-size: 25px"
                   @if(!$guest)
-                  onclick="event.preventDefault(); {{$member ? 'leaveGroup('.$group->id.')' : ' joinGroup('.$group->id.')'}};"
+                  onclick="event.preventDefault(); {{(App\Member::isMember(\Auth::user()->id, $group->id)) ? 'leaveGroup('.$group->id.')' : ' joinGroup('.$group->id.')'}};"
                   @endif
                   ></a>
                   @if(!$guest)

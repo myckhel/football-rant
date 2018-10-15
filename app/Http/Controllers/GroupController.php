@@ -34,12 +34,13 @@ class GroupController extends Controller
       $group = $request->group;      $user = $request->user;      $club = $request->club;
       //check if left already
       $member = 0;
-      if(!($member = Group::where('id',$group)->where('club',$club)->first())){
+      if(!($member = Member::where('groups',$group)->where('club',$club)->where('user', $user)->first())){
         return response()->json(['status' => false, 'reason' => 'You have already left this group']);
       }
+      //remove member
       Member::destroy($member->id);
       $name = Group::where('id',$group)->where('club',$club)->first()->name;
-      return response()->json(['status' => true, 'name' => $name]);
+      return response()->json(['status' => true, 'name' => $name, 'member' => $member->id]);
     }
 
     public function create(Request $request){
@@ -72,5 +73,17 @@ class GroupController extends Controller
         return view('club.group', compact('group', 'members', 'jgroups'));
       }
       return view('club.group', compact('group', 'members'));
+    }
+
+    public function store()
+    {
+        $group = Group::create(['name' => request('name')]);
+
+        $users = collect(request('users'));
+        $users->push(auth()->user()->id);
+
+        $group->users()->attach($users);
+
+        return $group;
     }
 }

@@ -13,7 +13,7 @@ class Member extends Model
 
     public static function isMember($id, $group = false){
       if($group){
-        if(Member::where('user', $id)->where('groups', $group)->first()){
+        if((!$guest = !(\Auth::user())) && (Member::where('user', $id)->where('groups', $group)->first())){
           return true;
         }else{return false;}
       }else{

@@ -69,7 +69,7 @@
       $fan = false;
       $guest = true;
       if(!($guest = !(\Auth::user()))){
-        $fan = App\Fan::isFan(\Auth::user()->id);
+        //$fan = App\Fan::isFan();
       }
       ?>
       @foreach($teams as $team)
@@ -91,11 +91,12 @@
                 </ul>
               </div>
               <a class="product-button fa fa-eye" data-placement="right" title="View {{$team->name}}" href="{{route('club', [App\Club::toLink($team->name)])}}" style="font-size: 26px"></a>
-                <a id="join_btn{{$team->id}}" class="product-button fa fa-{{$fan ? 'remove' : 'plus'}}"
-                data-placement="right" title="{{$fan ? 'Leave '.$team->name : 'Join '.$team->name}}" href="{{$guest ? route('auth.sign',['action' => 'joinClub', 'key' => $team->id]) : '#'}}" style="font-size: 25px"
-                @if(!$guest)
-                onclick="event.preventDefault(); {{$fan ? 'leaveTeam('.$team->id.')' : ' joinTeam('.$team->id.')'}};"
-                @endif
+                <a
+                  id="join_btn{{$team->id}}" class="product-button fa fa-{{(App\Fan::isFan($team->id)) ? 'remove' : 'plus'}}"
+                  data-placement="right" title="{{(App\Fan::isFan($team->id)) ? 'Leave '.$team->name : 'Join '.$team->name}}" href="{{$guest ? route('auth.sign',['action' => 'joinClub', 'key' => $team->id]) : '#'}}" style="font-size: 25px"
+                  @if(!$guest)
+                  onclick="event.preventDefault(); {{(App\Fan::isFan($team->id)) ? 'leaveTeam('.$team->id.')' : ' joinTeam('.$team->id.')'}};"
+                  @endif
                 ></a>
                 @if(!$guest)
                 <form id="{{$team->id}}" method="POST" style="display: none;" onsubmit="event.preventDefault();">
