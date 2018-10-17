@@ -31,3 +31,4 @@ module.exports = {
 //        test: 'jsx?$',
 //    }
 //}
+//'./resources/assets/js/bootstrap.js'

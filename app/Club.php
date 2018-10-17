@@ -9,7 +9,7 @@ class Club extends Model
 {
     //
     public static function isFan($id, $club){
-      if(Fan::where('user', $id)->where('club', $club)->first()){
+      if(Fan::where('user_id', $id)->where('club_id', $club)->first()){
         return true;
       }else{return false;}
     }
@@ -29,5 +29,9 @@ class Club extends Model
     public static function findByName($name){
       $name = Club::toName($name);
       return Club::where('name', $name)->first();
+    }
+
+    public function group(){
+      return $this->hasMany(Group::class);
     }
 }

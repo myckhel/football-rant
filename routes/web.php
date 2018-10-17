@@ -33,6 +33,10 @@ Route::get('/{club}/post', function () {
     return view('club.post');
 })->name('post');
 
+Route::get('group/messages', 'GroupController@getMsg')->name('group.msg');
+Route::post('group/message/save', 'GroupController@saveMsg')->name('group.msg.save');
+Route::get('group/list', 'GroupController@getList')->name('group.list');
+
 Route::get('/{club}/groups', 'GroupController@index')->name('groups');
 Route::post('/{club}/group/create', 'GroupController@create')->name('group.create');
 Route::post('/{club}/group/join', 'GroupController@join')->name('group.join');

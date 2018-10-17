@@ -8,12 +8,12 @@ class Fan extends Model
 {
   //
   protected $fillable = [
-      'id', 'user', 'club',
+      'id', 'user_id', 'club_id',
   ];
 
   public static function isFan($club = false){
     if($club){
-      if((!$guest = !($user = \Auth::user())) && (Fan::where('user', $user->id)->where('club', $club)->first())){
+      if((!$guest = !($user = \Auth::user())) && (Fan::where('user_id', $user->id)->where('club_id', $club)->first())){
         return true;
       }else{
         return false;
@@ -21,7 +21,7 @@ class Fan extends Model
     }
     else{
       //return club or false
-      return Fan::where('user', \Auth::user()->id)->join('clubs', 'clubs.id', 'fans.club')->first();
+      return Fan::where('user_id', \Auth::user()->id)->join('clubs', 'clubs.id', 'fans.club_id')->first();
     }
   }
 }
