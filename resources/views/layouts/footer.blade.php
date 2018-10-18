@@ -183,7 +183,9 @@
 	<script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 	@if(Route::currentRouteName() == "group")
 	<!--script data-main="{{ URL::asset('resources/assets/js/app.js')}}" src="{{ URL::asset('resources/assets/js/require.js') }}"></script-->
-	<script src="{{ URL::asset('public/bundle.js') }}"></script>
+  @auth
+  <script src="{{ URL::asset('public/bundle.js') }}"></script>
+  @endauth
 	<!--script type="module" src="{{ URL::asset('resources/assets/js/bootstrap.js') }}"></script-->
 	@endif
 <!-- coded by houdini-->
