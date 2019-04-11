@@ -52,3 +52,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/{club}/{groups}', 'GroupController@view')->name('group');
 Route::get('/{club}', 'ClubController@index')->name('club');
+
+//shared server clear cache
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('cache:clear');
+    // return what you want
+});
