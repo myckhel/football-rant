@@ -86,7 +86,7 @@
                 </article>
                 @endforeach
                 @else
-                <a href="{{route('register')}}">Register/Login To View Group Members</a>
+                <a href="{{route('auth.sign')}}">Register/Login To View Group Members</a>
                 @endif
               </div>
               <div class="tab-pane fade" id="discussion">
@@ -159,7 +159,7 @@
                     <!-- /.panel .chat-panel -->
                 </article>
                 @else
-                <a href="{{route('register')}}">Register/Login To View Group Discussion</a>
+                <a href="{{route('auth.sign')}}">Register/Login To View Group Discussion</a>
                 @endif
               </div>
             </div>

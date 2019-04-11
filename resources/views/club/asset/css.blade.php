@@ -17,7 +17,7 @@
 }
 #frame #sidepanel {
   float: left;
-  min-width: 280px;
+  min-width: 40%;
   max-width: 340px;
   width: 40%;
   height: 100%;
@@ -483,7 +483,7 @@
 }
 #frame .content {
   float: right;
-  width: 55%;
+  width: 60%;
   height: 100%;
   overflow: hidden;
   position: relative;
@@ -496,7 +496,7 @@
 }
 @media screen and (min-width: 900px) {
   #frame .content {
-    width: calc(100% - 310px);
+    width: calc(100% - 40%);
   }
 }
 #frame .content .contact-profile {
@@ -528,15 +528,17 @@
   color: #435f7a;
 }
 #frame .content .messages {
+  border: solid red 3pt;
   height: auto;
   width: 100%;
-  min-height: calc(100% - 93px);
-  max-height: calc(100% - 93px);
+  min-height: calc(100% - 17%);
+  max-height: calc(100% - 17%);
   overflow-y: scroll;
   overflow-x: hidden;
 }
 @media screen and (max-width: 735px) {
   #frame .content .messages {
+    min-height: calc(100% - 40%);
     max-height: calc(100% - 105px);
   }
 }

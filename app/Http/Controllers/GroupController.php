@@ -88,8 +88,16 @@ class GroupController extends Controller
         return $group;
     }
 
-    public function getMsg(){
-      return Discussions::with('user')->with('group')->get();
+    public function getMsg(Request $request){
+      $club = Club::find($request->club)->id;
+      $group = Group::find($request->group)->id;
+      $user = Auth::user();
+
+      $msg = Discussions::selectRaw('users.name as user_name, users.avatar as avatar, users.id as user_id, discussions.msg as msg ')
+      ->join('users', 'users.id', 'discussions.user_id')
+      ->where('group_id', $group)->where('club_id', $club)->get();
+      return $msg;
+      // return Discussions::with('user')->with('group')->get();
     }
 
     public function getList(){

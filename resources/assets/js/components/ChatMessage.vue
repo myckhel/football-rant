@@ -1,6 +1,6 @@
 <template lang="html">
-  <li :class="message.user.id === user_id ? 'sent' : 'replies' ">
-    <img :src="'../Home_files/'+message.user.avatar" alt="" />
+  <li :class="message.user_id === user_id ? 'sent' : 'replies' ">
+    <img :src="'../Home_files/'+message.avatar" alt="" />
     <p>{{message.msg}}</p>
   </li>
 </template>

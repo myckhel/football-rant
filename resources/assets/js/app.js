@@ -71,7 +71,7 @@ const app = new Vue({
       UsersInRoom: [],
     },
     created(){
-      axios.get('../group/messages').then(response => {
+      axios.get('../group/messages?club=1&group=4').then(response => {
         this.messages = response.data;
       });
       axios.get('../group/list').then(response => {
@@ -91,10 +91,10 @@ const app = new Vue({
         .listen('NewMessage', (e) => {
           //Handle Event
           this.messages.push({
-            msg: e.message.msg,
+            msg: e.msg,
             user: {
-              avatar: e.user.avatar,
-              id: e.user.id,
+              avatar: e.avatar,
+              id: e.user_id,
             },
           });
           $('.contact.active .preview').html('<span>' + e.user.name +':</span>' + e.message.msg);
